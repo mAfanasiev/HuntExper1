@@ -1,0 +1,68 @@
+
+.use {
+  display: block;
+  max-width: 100%;
+  &__section-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0 0;
+    &:last-child {
+      background: #F6F3EE;
+    }
+  }
+  &__wrapper {
+    display: block;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    &.-how-to-use {
+      background: repeating-linear-gradient(90deg,#F6F3EE,#F6F3EE 1px,#ffffff 0,#ffffff 194px);
+    }
+  }
+  &__container-title {
+    display: block;
+    text-align: center;
+    padding: 0 0 55px;
+    font-weight: 900;
+    font-size: $title-lg;
+    span {
+      color: #E8950A;
+    }
+  }
+  &__items-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    padding: 0 50px 115px;
+  }
+  &__item-image {
+    display: block;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+
+    &.-tablet {
+      background: url("./../img/Use__img-1.jpg");
+    }
+    &.-wood {
+      background: url("./../img/use__img-2.jpg");
+    }
+    &.-wait {
+      background: url("./../img/use__img-3.png");
+    }
+    &.-form {
+      background: url("./../img/order__img-1.jpg");
+    }
+    &.-operator {
+      background: url("./../img/order__img-2.jpg");
+    }
+    &.-product {
+      background: url("./../img/product.png");
+    }
+  }
+
+
+}
