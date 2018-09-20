@@ -5,6 +5,11 @@
 @import "reset";
 @import "fonts";
 
+.wrapper{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /**********header************/
 @import "header";

@@ -1,0 +1,108 @@
+@import '../libs/slick-carousel/slick/slick.scss';
+@import '../libs/slick-carousel/slick/slick-theme.scss';
+
+.profesional{
+    padding: $padding-xl;
+    background-color: #f5f3ed;
+}
+
+.title{
+    font-family: $default-font;
+    font-size: $title-xl;
+    text-align: center;
+    font-weight: 900;
+    &_orange{
+        color: $accent;
+    }
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        align-items: flex-start;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        align-items: flex-end;
+    }
+    &__top{
+        width: 84px;
+    }
+    &__img{
+        filter: grayscale(80%);
+    }
+    &__name{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: #303b3b;
+        margin-top: 14px;
+    }
+    &__description{
+        font-family: 'Roboto', sans-serif;
+        color: #98989d;
+        font-size: 16px;
+        margin-top: 4px;
+        &_end{
+            text-align: end;
+        }
+    }
+    &__center{
+        max-width: 830px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 47px 30px;
+        background-color: #fbfaf6;
+        border-radius: 20px;
+        &-left{
+            width: 170px;
+        }
+        &-right{
+            width: 570px;
+            margin-left: 31px;
+        }
+        &-name{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            color: #303b3b;
+        }
+        &-who{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: #919197;
+            margin-top: 3px;
+            &_orange{
+                color: $accent;
+            }
+        }
+        &-achievement{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            color: #303b3b;
+            font-size: 22px;
+            margin-top: 16px;
+        }
+        &-description{
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            color: #919197;
+        }
+    }  
+}
