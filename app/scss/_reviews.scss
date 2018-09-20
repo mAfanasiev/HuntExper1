@@ -27,12 +27,19 @@
 	border: 2px solid #dadada;
 	position: relative;
 	text-align: center;
-	box-shadow: 0px 0px 14px 0px #dedede;
+	box-shadow: 0px 8px 8px 0px #dedede;
 	width: 370px;
 }
 .reviews-text {
-	height: 210px;
+	max-height: 210px;
 	overflow: hidden;
+}
+.reviews-award {
+	display: none;
+	padding: 20px 0;
+}
+.reviews-award__img {
+	padding-bottom: 10px;
 }
 .reviews-line {
 	display: block;
@@ -90,7 +97,7 @@
 }
 .reviews .slick-center .reviews__wrap {
 	border-color: #d6b58c;
-	box-shadow: 0px 0px 14px 0px #e9d2a1;
+	box-shadow: 0px 8px 8px 0px #e9d2a1;
 }
 .reviews .slick-center .reviews-line {
 	background-color: #d6b58c;
