@@ -5,12 +5,94 @@
 @import "reset";
 @import "fonts";
 
+<<<<<<< HEAD
 .wrapper{
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
+=======
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+>>>>>>> upstream/master
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  outline: 0;
+  width: 228px;
+  height: 58px;
+  box-shadow: inset 0 0 4px rgba(134, 28, 15, 0.48),
+              0 16px 26px -12px #7f2418,
+              0 6px 0 -2px #7f2418;
+  background-color: #df2729;
+  background-image: linear-gradient(to right, #9e3e2b 0%, #d57a68 50%, #9e3e2b 100%);
+  cursor: pointer;
+  border-radius: 33px;
+  border: 0 solid #f0aa9c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  &:hover {
+    box-shadow: inset 0 0 4px rgba(134, 28, 15, 0.48),
+                0 6px 0 -2px #7f2418;
+  }
+  &:active {
+    border-bottom: none;
+    box-shadow: inset 0 0 4px rgba(134, 28, 15, 0.48);
+  }
+}
+.plus {
+  width: 30px;
+  height: 30px;
+  background-color: #e89509;
+  box-shadow: inset 0 0 4px rgba(205, 205, 205, 0.48);
+  background-image: linear-gradient(to right, #bdbdbd 0%, #e1e1e1 50%, #bdbdbd 100%);
+  border-radius: 50%;
+  border: 0 solid #bdbdbd;
+  position: relative;
+  border-bottom: 3px solid #bdbdbd;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+  }
+  &::after {
+    width: 2px;
+    height: 14px;
+    top: calc(50% - 7px);
+    left: calc(50% - 1px);
+  }
+  &::before {
+    width: 14px;
+    height: 2px;
+    top: calc(50% - 1px);
+    left: calc(50% - 7px);
+  }
+  &:hover {
+    box-shadow: inset 0 0 4px rgba(242, 201, 85, 0.48);
+    background-color: #e89509;
+    background-image: linear-gradient(to right, #e78b02 0%, #f2bf49 50%, #e78b02 100%);
+    border-bottom-color: #e89a18;
+  }
+  &:active {
+    border-bottom: 0 solid #e89a18;
+  }
+}
+
+.castom__line {
+  width: 80px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #d6b58c;
+}
 /**********header************/
 @import "header";
 
