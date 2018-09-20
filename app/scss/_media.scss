@@ -4,7 +4,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-
+  .reviews__wrap {
+    width: 325px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {

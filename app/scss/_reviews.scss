@@ -1,0 +1,100 @@
+@import '../libs/slick-carousel/slick/slick.scss';
+@import '../libs/slick-carousel/slick/slick-theme.scss';
+
+.reviews .colortext-grey {
+	color: #919197;
+}
+.reviews .colortext-orange {
+	color: #e89509;
+}
+.reviews {
+	padding: 80px 0 40px;
+	color: #303b3b;
+}
+.reviews-slider {
+	display: flex;
+}
+.reviews .slick-track {
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+.reviews .slick-slide {
+	padding: 0 10px;
+}
+.reviews__wrap {
+	padding: 130px 35px 60px;
+	border-radius: 10px;
+	border: 2px solid #dadada;
+	position: relative;
+	text-align: center;
+	box-shadow: 0px 0px 14px 0px #dedede;
+	width: 370px;
+}
+.reviews-text {
+	height: 210px;
+	overflow: hidden;
+}
+.reviews-line {
+	display: block;
+	width: 80px;
+	height: 6px;
+	border-radius: 2px;
+	background-color: #cdcdcd;
+	margin: 25px auto; 
+}
+.reviews .title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.reviews-img {
+	position: absolute;
+	top: -75px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border: 2px solid #dadada;
+	border-radius: 50%;
+	height: 157px;
+	width: 157px;
+	background-color: #dadada;
+}
+.reviews-img1 {
+	background-image: url(../img/reviews__auth-1.jpg);
+	background-position: center center;
+}
+.reviews-img2 {
+	background-image: url(../img/reviews__auth-2.jpg);
+	background-position: center center;
+}
+.reviews-img3 {
+	background-image: url(../img/reviews__auth-3.jpg);
+	background-position: center center;
+}
+.reviews-img4 {
+	background-image: url(../img/reviews__auth-4.jpg);
+	background-position: center center;
+}
+.reviews-img5 {
+	background-image: url(../img/reviews__auth-5.jpg);
+	background-position: center center;
+}
+.reviews-img img {
+	border-radius: 50%;
+}
+.reviews-button {
+	display: block;
+	background-color: #e89509;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.reviews .slick-center .reviews__wrap {
+	border-color: #d6b58c;
+	box-shadow: 0px 0px 14px 0px #e9d2a1;
+}
+.reviews .slick-center .reviews-line {
+	background-color: #d6b58c;
+}
+.reviews .slick-center .reviews-img {
+	border-color: #d6b58c;
+}
