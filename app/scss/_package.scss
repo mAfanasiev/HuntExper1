@@ -13,6 +13,16 @@
 .package-wrap {
 	display: flex;
 	margin: 0 -50px 45px -50px;
+	position: relative;
+}
+.package-wrap .symbols {
+	font-size: 60px;
+	position: absolute;
+	top: 50%;
+	left: 380px;
+}
+.package-wrap .symbols2 {
+	left: 800px;
 }
 .package-wrap__item {
 	width: 33%;
