@@ -170,7 +170,6 @@
     width: 270px;
     height: 270px;
     border: 2px solid #c4a276;
-    //margin-left: 25px;
     margin-left: auto;
     margin-right: auto;
     /*&:before {
@@ -361,8 +360,7 @@
     &__items-container {
       flex-wrap: wrap;
     }
-    &__item /*:nth-child(3)*/
-    {
+    &__item {
       margin-top: 60px;
     }
     &__item-order {
@@ -392,6 +390,5 @@
       padding: 0 10px 10px;
     }
   }
-
 }
 
