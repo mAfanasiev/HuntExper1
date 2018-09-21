@@ -3,35 +3,63 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Купить Уреферон недорого. Цены, отзывы. Закажите Уреферон сейчас!</title>
+    <title>Купить Hunt Expert  недорого. Цены, отзывы. Закажите Hunt Expert  сейчас!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext"
           rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../../../лп01/src/scss/block15.scss">
 </head>
 <body>
 
 <section class="section header">
     <div class="wrapper">
+        <div class="form form_top">
+            <form action="/submit" method="POST" class="x_order_form form__wrapper">
+                <div class="form__price">
+                    <div class="price__old">
+                        <p class="price__text">
+                            Старая цена
+                        </p>
+                        <span class="price__num price__num-old ib"><span class="x_price_previous">999</span><span
+                                class="x_currency">руб</span>.</span>
+                    </div>
+                    <div class="price__new">
+                        <p class="price__text">
+                            Новая цена
+                        </p>
+                        <span class="price__num price__num-new ib"><span class="x_price_current">499</span><span
+                                class="x_currency">руб</span>.</span>
+                    </div>
+                </div>
+                <div class="form__name">
+                    <input type="text" name="name" class="form__name__field" placeholder="Имя" required>
+                </div>
+                <div class="form__tel">
+                    <input type="text" name="phone" class="form__tel__field" placeholder="Телефон" required>
+                </div>
+                <button type="submit" class="btn form__btn">
+                    Заказать
+                </button>
+                <p class="sequrity">Ваши данные защищены!</p>
+            </form>
 
+            <!-- /.sequrity -->
+        </div>
     </div>
 </section>
-<!--<section class="section traps">
+<section class="section traps">
     <div class="wrapper">
-        <h2 class="title">
-            aqweaads
-        </h2>
-        <div class="btn">
-            Заказать
-        </div>
-        <div class="plus"></div>
-        <div class="castom__line">
+
 
         </div>
-    </div>-->
+    </div>
+
+    </div>
+
 </section>
 <section class="section package">
     <div class="wrapper">
@@ -81,7 +109,7 @@
                             <span class="layer2">1</span>
                         </span>
                     <p class="use__additional-info -blame">Ты поджигаешь 1-2 таблетки у места охоты</p>
-                    <div class="castom__line -blame-bottom l"></div>
+                    <div class="castom__line  line-bottom"></div>
                 </div>
                 <div class="use__item">
                     <span class="use__item-image -wood"></span>
@@ -91,7 +119,7 @@
                             <span class="layer2">2</span>
                         </span>
                     <p class="use__additional-info -smell">Запах распространяется на сотни метров</p>
-                    <div class="castom__line -smell-bottom l"></div>
+                    <div class="castom__line  line-bottom"></div>
                 </div>
                 <div class="use__item">
                     <span class="use__item-image -wait"></span>
@@ -101,7 +129,7 @@
                             <span class="layer2">3</span>
                         </span>
                     <p class="use__additional-info -away">Ты отходишь на несколько метров и ждешь добычу</p>
-                    <div class="castom__line -away-bottom l"></div>
+                    <div class="castom__line line-bottom"></div>
                 </div>
             </div>
         </div>
@@ -116,19 +144,27 @@
                 <span>Hunt Expert</span>
             </h3>
             <div class="use__items-container">
-                <div class="use__item">
+                <div class="use__item use__item-order">
                     <span class="use__item-image use__item-image-offer -form"></span>
                     <p class="use__additional-info">Заполните форму заказа</p>
+                    <p class="use__additional-text">Вам нужно указать только свое имя
+                        и номер телефона</p>
                 </div>
-                <div class="use__item">
+                <div class="use__item use__item-order">
                     <span class="use__item-image use__item-image-offer -operator"></span>
                     <p class="use__additional-info">Ответьте на звонок оператора</p>
+                    <p class="use__additional-text">Он уточнит ваши данные и ответит на все вопросы о продукте</p>
                 </div>
-                <div class="use__item">
+                <div class="use__item use__item-order">
                     <span class="use__item-image use__item-image-offer -product"></span>
                     <p class="use__additional-info">Оплатите после получения</p>
+                    <p class="use__additional-text">Все расходы по пересылке
+                        мы оплатим самостоятельно</p>
                 </div>
             </div>
+            <p class="use__order-consult">Если у вас возникают вопросы - вы всегда можете с нами связаться и получить подробную <span>бесплатную</span>
+                консультацию о продукте и способе его применения.
+            </p>
         </div>
     </div>
     <!--END use -second block  -->
@@ -152,7 +188,37 @@
 </section>
 <section class="section footer">
     <div class="wrapper">
-
+        <div class="footer__content">
+            <div class="content__left">
+                <div class="left__logo">
+                    <img class="everad__logo" src="img/everad.svg" alt="everad">
+                </div>
+                <div class="left__des">
+                    <p class="des__text des__text-orange">
+                        Hunt Expert
+                    </p>
+                    <p class="des__text">
+                        Copyright 2018
+                    </p>
+                </div>
+            </div>
+            <div class="content__center">
+                <a href="privacy.html" class="center__text center__text1" target="_blank">
+                    Политика конфиденциальности
+                </a>
+                <p class="center__text center__text2">
+                    г.Тверь, Петербургское шоссе, дом 53а
+                </p>
+            </div>
+            <div class="content__right">
+                <p class="right__text">
+                    ИНН 6952043760
+                </p>
+                <p class="right__text">
+                    ОГРН 1146952021523
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 

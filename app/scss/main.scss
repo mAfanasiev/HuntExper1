@@ -38,6 +38,8 @@
   font-weight: 900;
   font-size: 200px;
 }
+:-ms-fullscreen, :root .layer1 { color: #e97502; }
+:-ms-fullscreen, :root .layer1 { background: transparent; }
 .layer2 {
   display: block;
   position: absolute;
@@ -51,7 +53,8 @@
   font-weight: 900;
   font-size: 200px;
 }
-
+:-ms-fullscreen, :root .layer2 { color: #e97502; }
+:-ms-fullscreen, :root .layer2 { background: transparent; }
 .btn {
   display: flex;
   justify-content: center;
@@ -126,6 +129,195 @@
   border-radius: 2px;
   background-color: #d6b58c;
 }
+
+.text__orange {
+  color: #e89509;
+}
+
+
+
+
+/********form*************/
+.section {
+  & .form {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 3;
+    &__wrapper{
+      padding-bottom: 25px;
+      background-color: #fff;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+      width: 100%;
+    }
+  }
+  & .form__price {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    & .price__el {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 900;
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: -85px;
+      left: calc(50% - 35px);
+      background-image: url(../img/discont.svg);
+      line-height: 14.79px;
+      background-size: 100% 100%;
+    }
+    & .el__proc:nth-child(2) {
+      color: #fefefe;
+      font-size: 20px;
+      font-weight: 900;
+      text-shadow: 0px 0px 2px #333;
+      margin-left: -6px;
+      margin-bottom: -6px;
+    }
+  }
+  & .price__old,
+  & .price__new {
+    width: auto;
+    flex-shrink: 1;
+  }
+  & .price__old {
+    position: relative;
+  }
+  & .price__text {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #949494;
+  }
+
+  & .price__num {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  & .x_price_current,
+  & .x_price_previous {
+    font-size: 36px;
+  }
+  & .x_price_current {
+    font-weight: 700;
+  }
+  & .price__num-old {
+    color: #c2c0c0;
+    font-weight: 400;
+  }
+  & .x_price_previous {
+
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #2f3222;
+      position: absolute;
+      bottom: 18px;
+    }
+    &::after {
+      left: 0;
+      transform: rotate(20deg);
+    }
+    &::before {
+      right: 0;
+      transform: rotate(-20deg);
+    }
+  }
+  & .price__new .price__text {
+    color: #1c2022;
+  }
+  & .price__num-new {
+    color: #303b3b;
+  }
+  & .form__name,
+  & .form__tel {
+    width: 220px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    &::after {
+      position: absolute;
+      content: '';
+      left: 22px;
+      top: 20px;
+    }
+  }
+  & .form__name {
+    margin-top: 25px;
+  }
+  & .form__tel {
+    margin-top: 15px;
+  }
+  & .form__btn {
+    margin: 20px auto 0;
+  }
+  & .form__name::after {
+    width: 18px;
+    height: 24px;
+    background-image: url('../img/people.svg');
+    background-repeat: no-repeat;
+  }
+  & .form__tel::after {
+    width: 18px;
+    height: 20px;
+    background-image: url('../img/tel.svg');
+    background-repeat: no-repeat;
+  }
+  ::-webkit-input-placeholder { color: #949494; font-weight: 500; }
+  ::-moz-placeholder          { color: #949494; font-weight: 500; } /* Firefox 19+ */
+  :-moz-placeholder           { color: #949494; font-weight: 500; } /* Firefox 18- */
+  :-ms-input-placeholder      { color: #949494; font-weight: 500; }
+  & .form__name__field,
+  & .form__tel__field {
+    width: 100%;
+    height: 100%;
+    padding-left: 55px;
+    padding-right: 10px;
+    outline: none;
+    color: #949494;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #dfe2e3;
+    &:hover,
+    &:focus {
+      box-shadow: inset 1px 1px 3px #4443;
+    }
+  }
+  & .sequrity {
+    position: relative;
+  }
+  & .sequrity:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(../img/security.svg) center no-repeat;
+    background-size: 20px 20px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+/*end form *************/
 /**********header************/
 @import "header";
 
