@@ -12,6 +12,49 @@
   margin-left: auto;
 }
 
+.golden-gradient-box {
+  display: block;
+  position: absolute;
+}
+.layer0 {
+  display: block;
+  position: absolute;
+  z-index: -3;
+  line-height: 1;
+  color: #e89509;
+  font-weight: 900;
+  font-size: 200px;
+}
+.layer1 {
+  display: block;
+  position: absolute;
+  z-index: -2;
+  margin-top: -3px;
+  line-height: 1;
+  color: #4b4b4b;
+  background-image: linear-gradient(to right, #ce7b00 0%, #fcdd94 50%, #ce7b00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 200px;
+}
+:-ms-fullscreen, :root .layer1 { color: #e97502; }
+:-ms-fullscreen, :root .layer1 { background: transparent; }
+.layer2 {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  margin-top: -5px;
+  line-height: 1;
+  color: #4b4b4b;
+  background: linear-gradient(to right, #e78b02 0%, #f2bf49 50%, #e78b02 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 200px;
+}
+:-ms-fullscreen, :root .layer2 { color: #e97502; }
+:-ms-fullscreen, :root .layer2 { background: transparent; }
 .btn {
   display: flex;
   justify-content: center;
@@ -321,6 +364,7 @@
   }
 }
 /*end form *************/
+@import "media";
 /**********header************/
 @import "header";
 
@@ -354,4 +398,4 @@
 /**********popup************/
 @import "popup";
 
-@import "media"; // Always at the end
+

@@ -1,0 +1,34 @@
+.package {
+	padding: 80px 0;
+	background-color: #f5f4ed;
+}
+.package .btn {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 auto;
+}
+.package .title {
+	margin-bottom: 50px;
+}
+.package-wrap {
+	display: flex;
+	margin: 0 -50px 45px -50px;
+}
+.package-wrap__item {
+	width: 33%;
+	padding: 0 50px;
+}
+.package-wrap__item img {
+	background-position: center center;
+	max-height: 250px;
+}
+.package-wrap__item:first-child {
+	background-image: url(../img/package__img-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat; 
+}
+.package-wrap__item:nth-child(2) {
+	background-image: url(../img/package__img-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat; 
+}
