@@ -4,6 +4,7 @@
 
 .profesional{
     background-color: #f5f3ed;
+    padding: 80px 0;
 }
 
 .title{
@@ -40,12 +41,14 @@
         flex-direction: column;
         width: 150px;
         align-items: flex-end;
+        text-align: right;
         cursor: pointer;
     }
     &__top{
         width: 84px;
     }
     &__img{
+        height: 84px;
         filter: grayscale(80%);
         &:hover{
             filter: none;
@@ -57,14 +60,16 @@
         font-size: 20px;
         color: #303b3b;
         margin-top: 14px;
+        width: 100%;
     }
     &__description{
         font-family: 'Roboto', sans-serif;
         color: #98989d;
         font-size: 16px;
         margin-top: 4px;
+        width: 100%;
         &_end{
-            text-align: end;
+            text-align: right;
         }
     }
     &__content{
