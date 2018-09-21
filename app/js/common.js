@@ -15,16 +15,22 @@ $(document).ready(function() {
     
     // слайдер
    $('.slider').slick({
-
+        arrows: false
    });
 
    $('.slider__right').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active'); 
+   });
+   $('.slick__next').on('click', function(){
+       $('.slider').slick('slickNext');
    })
    $('.slider__left').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
+   })
+   $('.slick__prev').on('click', function(){
+       $('.slider').slick('slickPrev');
    })
    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         var sliderRightOne = $('.slider__right_one'),
