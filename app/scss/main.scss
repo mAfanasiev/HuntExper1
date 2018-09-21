@@ -149,18 +149,47 @@
     position: relative;
     z-index: 3;
     &__wrapper{
+      margin-top: 45px;
+      padding-top: 30px;
       padding-bottom: 25px;
       background-color: #fff;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
       width: 100%;
+      position: relative;
     }
+  }
+  & .form__discont {
+    width: 82px;
+    height: 84px;
+    position: absolute;
+    right: -21px;
+    top: -45px;
+    background-image: url(../img/discont.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & .discont__inner {
+    transform: rotate(15deg);
+  }
+  & .discont__text {
+    color: #7f2418;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+  }
+  & .discont__text-2 {
+    font-size: 15px;
+    transform: rotate(-15deg);
+    margin-left: -3px;
   }
   & .form__price {
     width: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 5px;
     position: relative;
     & .price__el {
@@ -268,6 +297,18 @@
   & .form__btn {
     margin: 20px auto 0;
   }
+  & .form__lastpack {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f2f1eb;
+    text-align: center;
+    color: #303b3b;
+    font-size: 15px;
+  }
+  & .lastpack {
+    color: #bb5e4c;
+    font-weight: 900;
+  }
   & .form__name::after {
     width: 18px;
     height: 24px;
@@ -303,6 +344,11 @@
   }
   & .sequrity {
     position: relative;
+    margin-top: 30px;
+    margin-left: 25px;
+    padding-left: 33px;
+    color: #283028;
+    font-size: 15px;
   }
   & .sequrity:before {
     content: '';
@@ -318,6 +364,7 @@
   }
 }
 /*end form *************/
+@import "media";
 /**********header************/
 @import "header";
 
@@ -350,7 +397,5 @@
 
 /**********popup************/
 @import "popup";
-
-@import "media"; // Always at the end
 
 
