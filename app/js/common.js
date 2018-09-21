@@ -29,3 +29,8 @@ $('.reviews-slider').slick({
     }
     ]
 })
+
+$(".plus").click(function(e){
+	var block = $(this).parents(".slick-slide");
+	block.toggleClass("active").siblings().removeClass("active");
+})
