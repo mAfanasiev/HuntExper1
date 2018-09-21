@@ -15,7 +15,7 @@ $('.reviews-slider').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         centerMode: false,
         dots: false
       }
@@ -24,6 +24,7 @@ $('.reviews-slider').slick({
       breakpoint: 640,
       settings: {
         slidesToShow: 1,
+        variableWidth: true,
         slidesToScroll: 1
       }
     }
