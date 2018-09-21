@@ -212,6 +212,7 @@ body {
   line-height: normal;
   font-family: $default-font;
   overflow-x: hidden;
+  background-color: #f5f4ed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -247,6 +248,7 @@ img {
 //	padding: $padding-xl
 .title {
   font-size: $title-xl;
+  text-align: center;
 }
 
 .text-bold {
