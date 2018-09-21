@@ -3,6 +3,7 @@
 	background-color: #f5f4ed;
 }
 .package .btn {
+	width: 288px;
 	font-size: 24px;
 	line-height: 28px;
 	margin: 0 auto;
@@ -12,33 +13,103 @@
 }
 .package-wrap {
 	display: flex;
-	margin: 0 -50px 45px -50px;
+	margin-bottom: 45px;
 	position: relative;
+	justify-content: space-between;
+	align-items: center;
 }
-.package-wrap .symbols {
-	font-size: 60px;
-	position: absolute;
-	top: 50%;
-	left: 380px;
-}
-.package-wrap .symbols2 {
-	left: 800px;
+.package-img {
+    position: absolute;
+    max-width: 335px;
+    left: -25px;
+    top: 0px;
 }
 .package-wrap__item {
-	width: 33%;
-	padding: 0 50px;
+	width: 254px;
+	height: 254px;
+	position: relative;
+}
+.package-product {
+	max-width: 350px;
+    left: -35px;
+    top: 0;
 }
 .package-wrap__item img {
 	background-position: center center;
-	max-height: 250px;
 }
 .package-wrap__item:first-child {
 	background-image: url(../img/package__img-bg.png);
 	background-position: center center;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
+	padding-left: 0;
 }
-.package-wrap__item:nth-child(2) {
+.package-wrap__item:nth-child(3) {
 	background-image: url(../img/package__img-bg.png);
 	background-position: center center;
 	background-repeat: no-repeat; 
+}
+.package-wrap__result img {
+	border-radius: 12px;
+	border: 1px solid #e89509;
+}
+.package-wrap .golden-gradient-box {
+	position: relative;
+	z-index: 2;
+}
+.package-wrap .golden-gradient-box span {
+	font-size: 120px;
+}
+.package-wrap .symbols {
+	// width: 100px;
+	// height: 100px;
+}
+@media only screen and (max-width: 1189px) {
+	.package-img {
+	    max-width: 260px;
+	    left: -10px;
+	    top: 25px;
+	}
+	.package-wrap__result {
+		width: 320px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+	.package-wrap .symbols {
+		margin: 0 5px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.package-wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.package-wrap__item {
+		margin-bottom: 30px;
+	}
+	.package-wrap .symbols {
+		margin: 0 30px; 
+	}
+}
+@media only screen and (max-width: 767px) {
+	.package-wrap .symbols {
+		margin: 0 5px; 
+	}
+}
+@media only screen and (max-width: 639px) {
+	.package-wrap {
+		flex-direction: column;
+	}
+	.package-wrap .symbols {
+		margin: 20px 0; 
+	}
+	.package-wrap__item {
+		margin-bottom: 0;
+	} 
+	.package-wrap__result {
+		width: auto;
+	}
 }
