@@ -1,23 +1,56 @@
 .traps{
-    padding: $padding-xl;
+    padding: 117px 0 83px;
     background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194px);
 }
 .list{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    &__top{
+    &__item{
+        width: 344px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &__img-two{
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
         position: relative;
     }
     &__img-one{
         position: absolute;
         z-index: 1;
-        top: 0;
+        bottom: 92px;
     }
-
+    &__caption{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        color: #303b3b;
+    }
+    &__castom-line{
+        margin: 22px 0;
+    }
+    &__description{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #898b82;
+        height: 65px;
+        overflow: hidden;
+        position: relative;
+        &::before{
+            content: '';
+            height: 23px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(top, rgba(251, 250, 246, 0.2) 0%, rgba(251, 250, 246, 0.35) 20%, rgba(251, 250, 246, 0.45) 37%, rgba(251, 250, 246, 0.6) 58%, rgba(251, 250, 246, 0.8) 77%, #fbfaf6 100%);
+            background: -webkit-linear-gradient(top, rgba(251, 250, 246, 0.2) 0%, rgba(251, 250, 246, 0.35) 20%, rgba(251, 250, 246, 0.45) 37%, rgba(251, 250, 246, 0.6) 58%, rgba(251, 250, 246, 0.8) 77%, #fbfaf6 100%);
+            background: linear-gradient(to bottom, rgba(251, 250, 246, 0.7) 0%, rgba(251, 250, 246, 0.7) 20%, rgba(251, 250, 246, 0.9) 37%, rgba(251, 250, 246, 0.9) 58%, rgba(251, 250, 246, 0.9) 77%, #fbfaf6 100%);
+        }    
+    }
 }

@@ -29,9 +29,10 @@ $(document).ready(function() {
             sliderLeftThree = $('.slider__left_three'),
             sliderRight = $('.slider__right'),
             sliderLeft = $('.slider__left');
-            console.log(nextSlide);
+
         sliderRight.removeClass('show');
         sliderLeft.removeClass('show');    
+        
         if (nextSlide == 0) {
             sliderLeftOne.addClass('show');
             sliderRightOne.addClass('show');
