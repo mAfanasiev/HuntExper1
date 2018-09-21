@@ -318,6 +318,7 @@
   }
 }
 /*end form *************/
+@import "media";
 /**********header************/
 @import "header";
 
@@ -350,7 +351,5 @@
 
 /**********popup************/
 @import "popup";
-
-@import "media"; // Always at the end
 
 
