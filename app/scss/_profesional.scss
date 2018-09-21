@@ -1,14 +1,13 @@
 @import '../libs/slick-carousel/slick/slick.scss';
 @import '../libs/slick-carousel/slick/slick-theme.scss';
+@import './media';
 
 .profesional{
-    padding: $padding-xl;
     background-color: #f5f3ed;
 }
 
 .title{
     font-family: $default-font;
-    font-size: $title-xl;
     text-align: center;
     font-weight: 900;
     color: #303b3b;
@@ -162,4 +161,53 @@
 
 .show{
     display: flex;
+}
+
+@media only screen and (max-width: 1190px) {
+    .slider{
+        width: 620px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider__left,
+    .slider__right{
+        display: none;
+    }
+    .content{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .slider{
+        width: 480px;
+        &__content{
+            padding: 10px;
+            &-right{
+                margin-left: 0;
+            }
+        }
+    }
+    .slider__content-right{
+        width: auto;
+    }
+    .slider__content{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 639px){
+    .slider{
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .slider{
+        width: 270px;
+        &__content{
+            padding: 10px;
+            &-right{
+                margin-left: 0;
+            }
+        }
+    }
 }

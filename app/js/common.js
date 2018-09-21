@@ -1,9 +1,15 @@
 $(document).ready(function() {
 
-    // слайдер плюс 
-        
+    // traps plus
+    $('.list__plus').click(function(){
+        var listDescription = $(this).parent('.list__item');
+        listDescription.toggleClass('itemActive').siblings().removeClass('itemActive');
+    })
+   
+
+    // слайдер плюс     
     var cont = $('.slider__content-right');           
-   $('.plus').click(function(){
+   $('.slider__plus').click(function(){
     cont.toggleClass('active');
     })
     
@@ -36,12 +42,15 @@ $(document).ready(function() {
         if (nextSlide == 0) {
             sliderLeftOne.addClass('show');
             sliderRightOne.addClass('show');
+            cont.removeClass('active');
         } else if (nextSlide == 1) {
             sliderLeftTwo.addClass('show');
             sliderRightTwo.addClass('show');
+            cont.removeClass('active');
         } else if (nextSlide == 2) {
             sliderLeftThree.addClass('show');
             sliderRightThree.addClass('show');
+            cont.removeClass('active');
         }
    });
 });
