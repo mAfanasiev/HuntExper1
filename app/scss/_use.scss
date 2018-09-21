@@ -262,7 +262,40 @@
       &.-operator,&.-product {
         background-size: contain;
       }
+      &.-tablet:after {
+        margin-top: 120px;
+        margin-left: 80px;
+      }
+    }
+    &__item-order:nth-child(2) {
+      margin-right: auto;
+    }
+    .tablet-position {
+      margin-top: -250px;
+      margin-left: -10px;
+    }
+    .wood-position {
+      margin-top: -250px;
+      margin-left: -35px;
+    }
+    .wait-position {
+      margin-top: -250px;
+      margin-left: 20px;
+    }
+    &__order-consult {
+      width: unset;
+      max-width: 823px;
     }
   }
+  @media all and (max-width: 1023px) {
+    &__items-container {
+      flex-wrap: wrap;
+    }
+    &__item:nth-child(3) {
+      margin-top: 60px;
+    }
+  }
+  @media all and (max-width: 639px) {
 
+  }
 }
