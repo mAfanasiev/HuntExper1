@@ -4,6 +4,21 @@
 //@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
 
 
-.section {
+.header {
   padding-top: 80px;
+  background-image: url('../img/header__bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  & .content__center {
+    position: absolute;
+    flex-shrink: 0;
+  }
+  & .green__text {
+    color: #a3d024;
+  }
 }
