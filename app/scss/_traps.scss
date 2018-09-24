@@ -128,14 +128,20 @@
             z-index: 1;
             font-size: 300px;
             text-shadow: 0px 0px 28px rgba(150, 150, 150, 1);
+            left: 50px;
+            top: 0;
         }
         &-two{
             z-index: 2;
             font-size: 300px;
+            left: 50px;
+            top: 0;
         }
         &-three{
             z-index: 3;
             font-size: 300px;
+            left: 50px;
+            top: 0;
         }
         &-text{
             font-size: 22px;
@@ -255,6 +261,7 @@
     }
 }
 @media only screen and (max-width: 639px){
+
     .production__left{
         justify-content: space-between;
     }
@@ -270,7 +277,7 @@
     }
     .production__three{
         width: 200px;
-        margin: -30px 10px -30px 40px;
+        margin: -70px 10px -70px 40px;
     }
     .production__four{
         width: 150px;
@@ -278,6 +285,55 @@
     }
     .production__fife{
         width: 150px;
+    }
+    .production{
+        &__number{
+            width: 100%;
+            height: 100%;
+            &-one{
+                z-index: 1;
+                font-size: 240px;
+                top: 26px;
+                left: 30px;
+            }
+            &-two{
+                z-index: 2;
+                font-size: 240px;
+                top: 26px;
+                left: 30px;
+            }
+            &-three{
+                z-index: 3;
+                font-size: 240px;
+                top: 26px;
+                left: 30px;
+            }
+            &-text{
+                font-size: 20px;
+                right: -38px;
+                bottom: 81px;    
+            }
+        }
+        &__v{
+            font-size: 70px;
+            left: 5px;
+            top: 74px;
+        }
+        &__x-one{
+            font-size: 60px;
+            left: 18px;
+            bottom: 98px;
+        }
+        &__x-two{
+            font-size: 60px;
+            left: 18px;
+            bottom: 98px;
+        }
+        &__x-three{
+            font-size: 60px;
+            left: 18px;
+            bottom: 98px;
+        }
     }
 }
 @media only screen and (max-width: 479px) {
@@ -304,5 +360,53 @@
         &__fife{
             width: 110px;
         }
+        &__number{
+            width: 100%;
+            height: 100%;
+            &-one{
+                z-index: 1;
+                font-size: 200px;
+                top: 48px;
+                left: 27px;
+            }
+            &-two{
+                z-index: 2;
+                font-size: 200px;
+                top: 48px;
+                left: 27px;
+            }
+            &-three{
+                z-index: 3;
+                font-size: 200px;
+                top: 48px;
+                left: 27px;
+            }
+            &-text{
+                font-size: 18px;
+                right: -40px;
+                bottom: 87px;
+            }
+        }
+        &__v{
+            font-size: 50px;
+            left: 9px;
+            top: 91px;
+        }
+        &__x-one{
+            font-size: 50px;
+            left: 18px;
+            bottom: 106px;
+        }
+        &__x-two{
+            font-size: 50px;
+            left: 18px;
+            bottom: 106px;
+        }
+        &__x-three{
+            font-size: 50px;
+            left: 18px;
+            bottom: 106px;
+        }
     }
+    
 }

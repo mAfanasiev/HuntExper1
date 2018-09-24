@@ -1,3 +1,5 @@
+@import './media';
+
 .profit{
     padding: 80px 0;
     background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194px);
@@ -55,6 +57,19 @@
             width: 155px;
             height: 155px;
         }
+        &__shadow{
+            display: block;
+            width: 160px;
+            height: 12px;
+            position: absolute;
+            border-radius: 80%;
+            z-index: -2;
+            content: "";
+            -webkit-box-shadow: 0px 17px 27px 2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 26px 27px 0px rgba(0, 0, 0, 0.75);
+            bottom: 20px;
+            left: 0;
+        }
         &__right{
             max-width: 500px;
         }
@@ -101,6 +116,13 @@
             box-sizing: border-box;
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            color: #303b3b;
+            font-weight: 900;
+            &_normal{
+                font-style: normal;
+            }
         }
     }
     &__bottom{
@@ -123,5 +145,57 @@
             text-align: center;
             max-width: 900px;
         }
+    }
+}
+@media only screen and (max-width: 1190px){
+    .profit-list__img {
+        top: 13px;
+        right: -69px;
+        width: 125px;
+    }    
+    .profit-list__caption{
+        font-size: 18px;
+    }
+    .profit-list__description{
+        font-size: 16px;
+    }
+    .profit-list__shadow{
+        bottom: 45px;
+        left: -16px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .profit__content {
+        flex-direction: column;
+    }
+    .profit-list__shadow{
+        bottom: 45px;
+        left: -16px;
+    }
+}
+@media only screen and (max-width: 639px){
+    .profit-list__item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profit-list__number{
+        height: 160px;
+    }
+    .profit-list__right{
+        margin-bottom: 20px;
+    }
+    .profit__composition::after{
+        height: 110px;
+        bottom: -17px;
+    }
+    .profit-list__shadow{
+        bottom: 47px;
+        left: -20px;
+    }
+}
+@media only screen and (max-width: 371px) {
+    .profit__composition::after{
+        height: 130px;
     }
 }

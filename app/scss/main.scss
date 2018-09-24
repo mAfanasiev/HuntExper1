@@ -14,7 +14,7 @@
 
 .golden-gradient-box {
   display: block;
-  position: absolute;
+  //position: absolute;
 }
 .layer0 {
   display: block;
@@ -23,7 +23,7 @@
   line-height: 1;
   color: #e89509;
   font-weight: 900;
-  font-size: 200px;
+  //font-size: 200px;
 }
 .layer1 {
   display: block;
@@ -36,7 +36,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  font-size: 200px;
+  //font-size: 200px;
 }
 :-ms-fullscreen, :root .layer1 { color: #e97502; }
 :-ms-fullscreen, :root .layer1 { background: transparent; }
@@ -51,7 +51,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  font-size: 200px;
+  //font-size: 200px;
 }
 :-ms-fullscreen, :root .layer2 { color: #e97502; }
 :-ms-fullscreen, :root .layer2 { background: transparent; }
@@ -138,8 +138,7 @@
 
 
 /********form*************/
-.section {
-  & .form {
+.form {
     width: 270px;
     display: flex;
     flex-direction: column;
@@ -157,7 +156,6 @@
       width: 100%;
       position: relative;
     }
-  }
   & .form__discont {
     width: 82px;
     height: 84px;

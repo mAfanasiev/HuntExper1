@@ -65,7 +65,7 @@ $(document).ready(function() {
 });
 
 $('.reviews-slider').slick({
-	arrows: true,
+	arrows: false,
 	dots: false,
 	infinite: true,
 	slidesToShow: 3,
@@ -96,4 +96,11 @@ $('.reviews-slider').slick({
 $(".plus").click(function(e){
 	var block = $(this).parents(".slick-slide");
 	block.toggleClass("active").siblings().removeClass("active");
+})
+
+$(".reviews-slick__prev").on("click", function(){
+  $('.reviews-slider').slick("slickPrev");
+})
+$(".reviews-slick__next").on("click", function(){
+  $('.reviews-slider').slick("slickNext");
 })
