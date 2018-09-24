@@ -11,6 +11,7 @@
 	padding: 85px 0 50px;
 	color: #303b3b;
 	background-color: #ffffff;
+	background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194px);
 }
 .reviews-slider {
 	display: flex;
@@ -35,6 +36,7 @@
 	text-align: center;
 	box-shadow: 0px 8px 8px 0px #dedede;
 	width: 345px;
+	background-color: #fff;
 }
 .reviews-text {
 	height: 200px;
