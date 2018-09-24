@@ -138,8 +138,7 @@
 
 
 /********form*************/
-.section {
-  & .form {
+.form {
     width: 270px;
     display: flex;
     flex-direction: column;
@@ -157,7 +156,6 @@
       width: 100%;
       position: relative;
     }
-  }
   & .form__discont {
     width: 82px;
     height: 84px;
