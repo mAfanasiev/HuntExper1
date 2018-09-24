@@ -1,0 +1,189 @@
+
+
+
+
+.ever-popup {
+  background-color: rgba(154, 142, 126, 0.9) !important;
+}
+
+.popup {
+  & .inner__wrap {
+    width: 750px;
+    height: 515px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #9a8e7e;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+  }
+  & .popup__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+  & .popup__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 270px;
+    height: 100%;
+
+  }
+  & .popup__left {
+    width: 442px;
+    position: relative;
+    & .price__el {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 900;
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: -25px;
+      left: calc(50% - 42px);
+      background-image: url(../img/discont.svg);
+      line-height: 14.79px;
+      background-size: 100% 100%;
+    }
+  }
+  & .form__wrapper {
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 30px;
+    padding-top: 0;
+  }
+  & .form .form__name__field,
+  & .form .form__tel__field {
+    border: 1px solid #dfe2e3;
+    background-color: #f8f8f8;
+  }
+  & .form .form__price {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  & .price__line {
+    position: relative;
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #dedede;
+    background-image: linear-gradient(to top, #e3e2e0 0%, #d3cfcc 20%, #d3cfcc 65%, #e0dfde 100%);
+    margin: 0 20px;
+  }
+  & .form .sequrity {
+    margin-top: 45px;
+  }
+  & .form__title {
+    color: #b85b48;
+    font-weight: 900;
+    font-size: 49px;
+  }
+  & .form .price__num-old {
+    color: #ce7260;
+  }
+  .form .form__name, .form .form__tel {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .form .form__btn {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  & .left__product {
+    width: 100%;
+  }
+
+  & .right__form {
+    background-color: transparent;
+    box-shadow: none;
+    padding-bottom: 0;
+  }
+  & .left__product__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: -50px;
+    right: -65px;
+  }
+  & .form__pack {
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+  }
+  & .fiol {
+    color: #3f1f7b;
+    font-weight: 700;
+  }
+  & .form__name {
+    margin-top: 15px;
+  }
+  & .form__name__field,
+  & .form__tel__field {
+    background-color: #eff4fa;
+    border: none;
+  }
+  & .left__product__man {
+    position: absolute;
+    bottom: 0;
+    right: -64px;
+    width: 582px;
+    max-width: 582px;
+  }
+}
+.ever-popup__close {
+  display: none !important;
+}
+.ever-popup__close {
+  width: 23px !important;
+  height: 24px !important;
+  top: 50px !important;
+  right: 20px !important;
+  z-index: 9 !important;
+}
+@media screen and (max-width: 767px){
+  .popup {
+    & .left__product__man {
+      display: none;
+    }
+    & .inner__wrap {
+      padding: 10px;
+      background-color: #fff;
+      width: 300px;
+      height: auto;
+    }
+    & .popup__left {
+      width: 100%;
+    }
+    & .left__product {
+      margin-top: 0px;
+    }
+    & .popup__left .price__el {
+      top: 5px;
+    }
+    & .left__product__img {
+      width: 100%;
+      height: auto;
+    }
+    & .content__right {
+      height: auto;
+    }
+    & .popup__container {
+      flex-direction: column-reverse;
+    }
+    & .left__product__img {
+      position: static;
+    }
+  }
+}
