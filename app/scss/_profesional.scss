@@ -4,6 +4,7 @@
 
 .profesional{
     background-color: #f5f3ed;
+    padding: 80px 0;
 }
 
 .title{
@@ -21,13 +22,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 65px;
 }
 
 .slider{
     width: 830px;
     display: flex;
     justify-content: center;
-    margin-top: 65px;
     &__left{
         display: flex;
         flex-direction: column;
@@ -40,12 +41,14 @@
         flex-direction: column;
         width: 150px;
         align-items: flex-end;
+        text-align: right;
         cursor: pointer;
     }
     &__top{
         width: 84px;
     }
     &__img{
+        height: 84px;
         filter: grayscale(80%);
         &:hover{
             filter: none;
@@ -57,14 +60,16 @@
         font-size: 20px;
         color: #303b3b;
         margin-top: 14px;
+        width: 100%;
     }
     &__description{
         font-family: 'Roboto', sans-serif;
         color: #98989d;
         font-size: 16px;
         margin-top: 4px;
+        width: 100%;
         &_end{
-            text-align: end;
+            text-align: right;
         }
     }
     &__content{
@@ -142,12 +147,32 @@
     }
 }
 
-.slick-prev:before,
-.slick-next:before{
-    color: #303b3b;
+.slick-prev,
+.slick-next,
+.slick-arrow{
+    display: none;
+}
+
+.slick__next{
+    width: 24px;
+    height: 22px;
+    margin-left: -20px;
+    z-index: 5;
+    cursor: pointer;
+}
+.svg-arrow-v3{
+    fill:#303b3b;
     &:hover{
-        color: #b55744;
+        fill: #b55744;
     }
+}
+.slick__prev{
+    width: 24px;
+    height: 22px;
+    transform: rotate(180deg);
+    margin-right: -20px;
+    z-index: 5;
+    cursor: pointer;
 }
 
 .slider__left_one,

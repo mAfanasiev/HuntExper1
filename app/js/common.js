@@ -15,17 +15,24 @@ $(document).ready(function() {
     
     // слайдер
    $('.slider').slick({
-
+        arrows: false
    });
 
    $('.slider__right').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active'); 
+   });
+   $('.slick__next').on('click', function(){
+       $('.slider').slick('slickNext');
    })
    $('.slider__left').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
    })
+   $('.slick__prev').on('click', function(){
+       $('.slider').slick('slickPrev');
+   })
+
    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         var sliderRightOne = $('.slider__right_one'),
             sliderRightTwo = $('.slider__right_two'),
@@ -86,12 +93,14 @@ $('.reviews-slider').slick({
 
 $(".plus").click(function(e){
 	var block = $(this).parents(".slick-slide");
-	block.toggleClass("active").siblings().removeClass("active");
+	block.toggleClass("reviews-active").siblings().removeClass("reviews-active");
 })
 
 $(".reviews-slick__prev").on("click", function(){
   $('.reviews-slider').slick("slickPrev");
+  $(".reviews-active").removeClass("reviews-active");
 })
 $(".reviews-slick__next").on("click", function(){
   $('.reviews-slider').slick("slickNext");
+  $(".reviews-active").removeClass("reviews-active")
 })

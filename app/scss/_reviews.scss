@@ -63,7 +63,7 @@
 	background-color: #d6d6d6;
 	z-index: -1;
 }
-.slick-slide.active .reviews-award {
+.slick-slide.reviews-active .reviews-award {
 	display: block;
 }
 .reviews-award__img {
@@ -116,10 +116,10 @@
 .reviews .slick-center .reviews-img img {
 	background-color: #d6b58c;
 }
-.slick-slide.active .reviews-text {
+.slick-slide.reviews-active .reviews-text {
 	height: auto;
 }
-.slick-slide.active .plus::after {
+.slick-slide.reviews-active .plus::after {
 	width: 0;
 	height: 0;
 }
