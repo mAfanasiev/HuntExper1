@@ -95,12 +95,14 @@ $('.reviews-slider').slick({
 
 $(".plus").click(function(e){
 	var block = $(this).parents(".slick-slide");
-	block.toggleClass("active").siblings().removeClass("active");
+	block.toggleClass("reviews-active").siblings().removeClass("reviews-active");
 })
 
 $(".reviews-slick__prev").on("click", function(){
   $('.reviews-slider').slick("slickPrev");
+  $(".reviews-active").removeClass("reviews-active");
 })
 $(".reviews-slick__next").on("click", function(){
   $('.reviews-slider').slick("slickNext");
+  $(".reviews-active").removeClass("reviews-active")
 })
