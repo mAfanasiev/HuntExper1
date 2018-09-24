@@ -24,6 +24,7 @@ $(document).ready(function() {
    });
    $('.slick__next').on('click', function(){
        $('.slider').slick('slickNext');
+       cont.removeClass('active');
    })
    $('.slider__left').on('click', function(){
        $('.slider').slick('slickPrev');
@@ -31,6 +32,7 @@ $(document).ready(function() {
    })
    $('.slick__prev').on('click', function(){
        $('.slider').slick('slickPrev');
+       cont.removeClass('active');
    })
 
    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
