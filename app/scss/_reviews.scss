@@ -14,7 +14,7 @@
 }
 .reviews-slider {
 	display: flex;
-	padding: 0 30px;
+	padding: 0 35px;
 }
 .reviews-slider__title {
 	font-size: 18px;
@@ -34,7 +34,7 @@
 	position: relative;
 	text-align: center;
 	box-shadow: 0px 8px 8px 0px #dedede;
-	width: 350px;
+	width: 345px;
 }
 .reviews-text {
 	height: 200px;
@@ -162,11 +162,14 @@
 	}
 }
 @media only screen and (max-width: 767px) {
+	.reviews-slider__title {
+		font-size: 16px;
+	}
 	.reviews .slick-slide {
-		padding: 0 5px;
+		padding: 0 10px;
 	}
 	.reviews__wrap {
-		width: 270px;
+		width: 250px;
 		padding: 127px 10px 44px;
 	}
 }
