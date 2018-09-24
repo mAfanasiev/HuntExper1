@@ -6,6 +6,7 @@
     display: block;
     width: 100%;
     margin: 0 auto;
+    background-color: #ffffff;
     &:last-child {
       background: #F6F3EE;
       position: relative;
@@ -14,7 +15,7 @@
   }
   &__wrapper {
     &.-how-to-use {
-      background: repeating-linear-gradient(90deg,#F6F3EE,#F6F3EE 1px,#ffffff 0,#ffffff 188px);
+      background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 188px);
       position: relative;
       z-index: 0;
       padding-bottom: 83px;
@@ -31,12 +32,23 @@
     //padding-right: 60px;
     span {
       color: #E8950A;
+      white-space: nowrap;
     }
+  }
+  &__horizontal-line {
+    display: block;
+    position: absolute;
+    content: "";
+    z-index: -2;
+    width: 650px;
+    height: 1px;
+    background-color: #dadada;
+    margin-top: 138px;
+    margin-left: 300px;
   }
   &__items-container {
     display: flex;
     justify-content: space-between;
-    //flex-wrap: wrap;
   }
   &__item {
     margin-right: auto;
@@ -75,15 +87,15 @@
     margin-left: auto;
     border-radius: 50%;
     border: 2px solid #ffffff;
-    &:before {
+    /*&:before {
       display: block;
       position: absolute;
       content: url("./../img/use_shadow.png");
       margin-top: 225px;
       margin-left: 13px;
-    }
+    }*/
     &.-tablet {
-      background: url("./../img/Use__img-1.jpg");
+      background: no-repeat url("./../img/Use__img-1.jpg");
       //margin-left: 19px;
       &:after {
         display: block;
@@ -97,33 +109,70 @@
 
     }
 
-
     &.-wood {
-      background: url("./../img/use__img-2.jpg");
+      background: no-repeat url("./../img/use__img-2.jpg");
       //margin-left: 55px;
     }
     &.-wait {
-      background: url("./../img/use__img-3.png");
+      background: no-repeat url("./../img/use__img-3.png");
       //margin: 0 27px 0 80px;
     }
     &.-form {
-      background: url("./../img/order__img-1.jpg");
+      background: no-repeat url("./../img/order__img-1.jpg");
     }
     &.-operator {
-      background: url("./../img/order__img-2.jpg");
+      background: no-repeat url("./../img/order__img-2.jpg");
     }
     &.-product {
-      background: url("./../img/product.png");
+      background: no-repeat 50% 50% url("./../img/product.png") #ffffff;
+      background-size: 200px 170px;
+    }
+  }
+  &__ellipse-shadow {
+    display: block;
+    width: 160px;
+    height: 12px;
+    position: absolute;
+    border-radius: 80%;
+    z-index: -2;
+    content: "";
+    -webkit-box-shadow: 0px 17px 27px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 26px 27px 0px rgba(0, 0, 0, 0.75);
+    &.-margin-tablet {
+      margin-top: -40px;
+      margin-left: 60px;
+    }
+    &.-margin-wood {
+      margin-top: -40px;
+      margin-left: 50px;
+    }
+    &.-margin-wait {
+      margin-top: -40px;
+      margin-left: 90px;
+    }
+    &.-margin-form {
+      margin-top: -40px;
+      margin-left: 60px;
+      opacity: 0.6;
+    }
+    &.-margin-operator {
+      margin-top: -40px;
+      margin-left: 80px;
+      opacity: 0.6;
+    }
+    &.-margin-product {
+      margin-top: -40px;
+      margin-left: 80px;
+      opacity: 0.6;
     }
   }
   &__item-image-offer {
     width: 270px;
     height: 270px;
     border: 2px solid #c4a276;
-    //margin-left: 25px;
     margin-left: auto;
     margin-right: auto;
-    &:before {
+    /*&:before {
       display: block;
       position: absolute;
       z-index: -1;
@@ -131,19 +180,31 @@
       margin-top: 245px;
       margin-left: 20px;
       opacity: 0.3;
-    }
+    }*/
   }
   .tablet-position {
+    position: absolute;
     margin-top: -279px;
     margin-left: -37px;
+    span {
+      font-size: 200px;
+    }
   }
   .wood-position {
+    position: absolute;
     margin-top: -279px;
     margin-left: -56px;
+    span {
+      font-size: 200px;
+    }
   }
   .wait-position {
+    position: absolute;
     margin-top: -279px;
     margin-left: -13px;
+    span {
+      font-size: 200px;
+    }
   }
   &__additional-info {
     display: block;
@@ -168,9 +229,9 @@
   }
   .line-bottom {
     margin-top: 22px;
-  margin-right: auto;
-  margin-left: auto;
-}
+    margin-right: auto;
+    margin-left: auto;
+  }
   &__additional-text {
     padding: 10px 0 44px;
     text-align: center;
@@ -196,7 +257,6 @@
       font-style: normal;
     }
   }
-
 
   /*.golden-gradient {
     display: block;
@@ -242,11 +302,14 @@
     }
   }*/
 
-
   @media all and (max-width: 1190px) {
     &__container-title {
-      padding: 40px 50px 55px 0;
+      padding: 40px 0 55px 0;
       font-size: 40px;
+    }
+    &__horizontal-line {
+      margin-top: 100px;
+      margin-left: 150px;
     }
     &__item-image {
       display: block;
@@ -258,11 +321,74 @@
         margin-top: 175px;
         margin-left: -13px;
       }
-      &.-tablet, &.-wood, &.-wait,&.-form,
-      &.-operator,&.-product {
+      &.-tablet, &.-wood, &.-wait, &.-form,
+      &.-operator {
         background-size: contain;
       }
+      &.-product {
+        background-size: 150px 120px;
+      }
+      &.-tablet:after {
+        margin-top: 120px;
+        margin-left: 80px;
+      }
+    }
+    &__item-order:nth-child(2) {
+      margin-right: auto;
+    }
+    .tablet-position {
+      margin-top: -250px;
+      margin-left: -10px;
+    }
+    .wood-position {
+      margin-top: -250px;
+      margin-left: -35px;
+    }
+    .wait-position {
+      margin-top: -250px;
+      margin-left: 20px;
+    }
+    &__order-consult {
+      width: unset;
+      max-width: 823px;
     }
   }
-
+  @media all and (max-width: 1023px) {
+    &__horizontal-line {
+      display: none;
+    }
+    &__items-container {
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-top: 60px;
+    }
+    &__item-order {
+      margin-top: 20px;
+    }
+    &__order-consult {
+      padding-bottom: 10px;
+    }
+  }
+  @media all and (max-width: 479px) {
+    &__ellipse-shadow {
+      &.-margin-wait {
+        margin-top: -40px;
+        margin-left: 60px;
+      }
+    }
+    &__additional-info {
+      &.-blame, &.-smell, &.-away {
+        width: unset;
+        max-width: 270px;
+      }
+    }
+    .wood-position, .wait-position {
+      margin-left: -5px;
+    }
+    &__order-consult {
+      padding: 0 10px 10px;
+    }
+  }
 }
+
