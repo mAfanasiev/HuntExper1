@@ -233,7 +233,7 @@
     margin-left: auto;
   }
   &__additional-text {
-    padding: 10px 0 44px;
+    padding: 10px 0 40px;
     text-align: center;
     color: #919197;
     font-weight: 400;
@@ -258,54 +258,13 @@
     }
   }
 
-  /*.golden-gradient {
-    display: block;
-    position: relative;
-    z-index: auto;
-    margin-top: -1px;
-    margin-left: 1px;
-    line-height: 1;
-    color: #e89509;
-    font-weight: 900;
-    font-size: 200px;
-
-
-    &:before {
-      display: block;
-      position: absolute;
-      z-index: -2;
-      content: "1";
-      margin-top: -26px;
-      margin-left: -58px;
-      line-height: 1;
-      color: #4b4b4b;
-      background-image: linear-gradient(to right, #ce7b00 0%, #fcdd94 50%, #ce7b00 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 900;
-      font-size: 200px;
-    }
-    &:after {
-      display: block;
-      position: absolute;
-      z-index: -1;
-      content: "1";
-      margin-top: -31px;
-      margin-left: -58px;
-      line-height: 1;
-      color: #4b4b4b;
-      background: linear-gradient(to right, #e78b02 0%, #f2bf49 50%, #e78b02 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 900;
-      font-size: 200px;
-    }
-  }*/
-
   @media all and (max-width: 1190px) {
     &__container-title {
       padding: 40px 0 55px 0;
       font-size: 40px;
+    }
+    &__wrapper.-how-to-use {
+      padding-bottom: 40px;
     }
     &__horizontal-line {
       margin-top: 100px;
@@ -349,8 +308,9 @@
       margin-left: 20px;
     }
     &__order-consult {
-      width: unset;
+      width: auto;
       max-width: 823px;
+      padding-bottom: 40px;
     }
   }
   @media all and (max-width: 1023px) {
@@ -366,11 +326,14 @@
     &__item-order {
       margin-top: 20px;
     }
-    &__order-consult {
-      padding-bottom: 10px;
-    }
   }
   @media all and (max-width: 479px) {
+    &.use__wrapper.-how-to-use {
+      padding-bottom: 20px;
+    }
+    &__container-title {
+      padding: 20px 0;
+    }
     &__ellipse-shadow {
       &.-margin-wait {
         margin-top: -40px;
@@ -387,7 +350,7 @@
       margin-left: -5px;
     }
     &__order-consult {
-      padding: 0 10px 10px;
+      padding: 0 10px 20px;
     }
   }
 }
