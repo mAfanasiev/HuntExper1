@@ -32,6 +32,7 @@ $(document).ready(function() {
    $('.slick__prev').on('click', function(){
        $('.slider').slick('slickPrev');
    })
+
    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         var sliderRightOne = $('.slider__right_one'),
             sliderRightTwo = $('.slider__right_two'),
