@@ -8,12 +8,13 @@
 	font-weight: 900;
 }
 .reviews {
-	padding: 85px 0 40px;
+	padding: 85px 0 50px;
 	color: #303b3b;
+	background-color: #ffffff;
 }
 .reviews-slider {
 	display: flex;
-	padding: 0 30px;
+	padding: 0 35px;
 }
 .reviews-slider__title {
 	font-size: 18px;
@@ -26,9 +27,6 @@
 .reviews .slick-slide {
 	padding: 0 10px;
 }
-.slick-prev:before, .slick-next:before {
-	color: #303b3b;
-}
 .reviews__wrap {
 	padding: 127px 30px 73px;
 	border-radius: 10px;
@@ -36,7 +34,7 @@
 	position: relative;
 	text-align: center;
 	box-shadow: 0px 8px 8px 0px #dedede;
-	width: 350px;
+	width: 345px;
 }
 .reviews-text {
 	height: 200px;
@@ -125,19 +123,28 @@
 	width: 0;
 	height: 0;
 }
-.reviews .slick-prev, .reviews .slick-next {
-	width: 25px;
-	height: 25px;
+.reviews .slider-box {
+	position: relative;
 }
-.reviews .slick-prev:before, .reviews .slick-next:before {
-	font-size: 30px;
-	font-weight: 900;
+.reviews .svg-arrow-v3{
+		fill:#303b3b;
+		&:hover {
+			fill:#b55744;
+		}
+	}
+.reviews-slick__prev, 
+.reviews-slick__next  {
+	position: absolute;
+	width: 24px;
+	height: 22px;
+	top: 50%;
+	right: 5px;
+	z-index: 5;
+	cursor: pointer;
 }
-.reviews .slick-prev {
-	left: -8px;
-}
-.reviews .slick-next {
-	right: -4px;
+.reviews-slick__prev {
+	transform: rotate(180deg);
+	left: 5px;
 }
 
 @media only screen and (max-width: 1190px) {
@@ -146,32 +153,23 @@
 	}
 	.reviews__wrap {
 		padding: 127px 10px 40px;
-		width: 300px;
+		width: 290px;
 	}
-	.reviews .slick-prev {
-		left: -2px;
-	}
-	.reviews .slick-next {
-		right: 5px;
-	}
-} 
+}
 @media only screen and (max-width: 1023px) {
 	.reviews__wrap {
-		width: 325px;
-	}
-	.reviews .slick-prev {
-		left: -4px;
-	}
-	.reviews .slick-next {
-		right: 0;
+		width: 315px;
 	}
 }
 @media only screen and (max-width: 767px) {
+	.reviews-slider__title {
+		font-size: 16px;
+	}
 	.reviews .slick-slide {
-		padding: 0 5px;
+		padding: 0 10px;
 	}
 	.reviews__wrap {
-		width: 270px;
+		width: 250px;
 		padding: 127px 10px 44px;
 	}
 }
@@ -197,14 +195,14 @@
 		width: 300px;
 	}
 	.reviews .slick-slide {
-		padding: 0 45px;
+		padding: 0;
 	}
-	.reviews .slick-prev {
+	.reviews-slick__prev {
 		left: 76px;
-		top: 233px;
+		top: 228px;
 	}
-	.reviews .slick-next {
+	.reviews-slick__next {
 		right: 80px;
-		top: 233px;
+		top: 228px;
 	}
 }
