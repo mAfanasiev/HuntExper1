@@ -29,7 +29,7 @@
 	padding-bottom: 20px;
 }
 .reviews .slick-slide {
-	padding: 0 9px;
+	padding: 0 10px;
 }
 .reviews__wrap {
 	padding: 127px 27px 73px;
@@ -168,10 +168,10 @@
 		background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194.5px);
 	}
 	.reviews-slick__next  {
-		right: 10px;
+		right: 5px;
 	}
 	.reviews-slick__prev {
-		left: 10px;
+		left: 5px;
 	}
 	.reviews-slider {
 		padding: 0 35px;
@@ -189,7 +189,7 @@
 	}
 	.reviews__wrap {
 		padding: 127px 10px 40px;
-		width: 300px;
+		width: 290px;
 	}
 	.reviews-text br {
 		display: none;
@@ -203,7 +203,7 @@
 		background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 127.5px);
 	}
 	.reviews__wrap {
-		width: 330px;
+		width: 315px;
 	}
 	.animals .title br {
 		display: none;
@@ -217,7 +217,7 @@
 		padding: 0 10px;
 	}
 	.reviews__wrap {
-		width: 270px;
+		width: 262px;
 		padding: 127px 10px 44px;
 	}
 	.reviews-slider {
@@ -237,6 +237,10 @@
 	}
 }
 @media only screen and (max-width: 479px) {
+	.slider-box {
+		max-width: 300px;
+		margin: 0 auto;
+	}
 	.reviews-slider__title {
 		font-size: 16px;
 	}
@@ -252,11 +256,11 @@
 		padding: 0;
 	}
 	.reviews-slick__prev {
-		left: 95px;
+		left: 20px;
 		top: 228px;
 	}
 	.reviews-slick__next {
-		right: 95px;
+		right: 20px;
 		top: 228px;
 	}
 	.reviews .wrapper {
