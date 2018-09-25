@@ -3,7 +3,7 @@
 	background-color: #f5f4ed;
 }
 .animals .title {
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 }
 .animals-wrap {
 	display: flex;
@@ -53,17 +53,21 @@
 		transform: none !important;
 		margin: 0 10px 20px !important;
 		width: calc(33% - 20px);
+		padding: 15px;
 	}
 }
 @media only screen and (max-width: 767px) {
 	.animals-wrap__item {
 		width: calc(50% - 20px);
-		padding: 15px;
 	}
 }
 @media only screen and (max-width: 479px) {
 	.animals-wrap__item {
 		width: 300px;
 		margin: 0 0 20px !important;
+	}
+	.animals-wrap__item:nth-child(2),
+	.animals-wrap__item:nth-child(3) {
+		display: none;
 	}
 }
