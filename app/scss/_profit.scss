@@ -1,6 +1,7 @@
 @import './media';
 
 .profit{
+    overflow-x: hidden;
     background-color: #ffffff;
     &__title{
         text-align: center;
