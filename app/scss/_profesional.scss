@@ -146,8 +146,7 @@
         }
     }
     .plus::after{
-        width: 0;
-        height: 0;
+        display: none;
     }
 }
 
@@ -167,7 +166,7 @@
 .svg-arrow-v3{
     fill:#303b3b;
     &:hover{
-        fill: #b55744;
+        fill: #ffa500;
     }
 }
 .slick__prev{
@@ -193,12 +192,18 @@
 }
 
 @media only screen and (max-width: 1190px) {
+    .profesional{
+        padding: $padding-lg;
+    }
     .slider{
         width: 620px;
     }
 }
 
 @media only screen and (max-width: 1023px) {
+    .profesional{
+        padding: $padding-md;
+    }
     .slider__left,
     .slider__right{
         display: none;
@@ -208,6 +213,12 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .profesional{
+        padding:    $padding-sm;
+    }
+    .content{
+        margin-top: 25px;
+    }
     .slider{
         width: 480px;
         &__content{

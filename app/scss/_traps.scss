@@ -12,15 +12,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194px);
-        background-position: 3px 0;
+        background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194.9px);
         padding: 117px 0 80px;
     }
 }
 .list{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     &__item{
         width: 344px;
         display: flex;
@@ -200,6 +199,9 @@
     }
 }
 @media only screen and (max-width: 1023px) {
+    .traps__wrapper{
+        padding: 0;
+    }
     .list{
         flex-wrap: wrap;
         justify-content: space-around;
@@ -345,6 +347,9 @@
     }
 }
 @media only screen and (max-width: 479px) {
+    .traps__wrapper{
+        background: #ffffff;
+    }
     .list__item{
         width: 300px;
     }
