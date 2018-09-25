@@ -29,7 +29,6 @@
     font-size: 44px;
     font-weight: 900;
     line-height: 44px;
-    //padding-right: 60px;
     span {
       color: #E8950A;
       white-space: nowrap;
@@ -53,13 +52,6 @@
   &__item {
     margin-right: auto;
     margin-left: auto;
-    /*padding: 0 50px 115px 55px;
-    &:first-child {
-      padding: 0 60px 115px 30px;
-    }
-    &:last-child {
-      padding: 0 10px 115px 85px;
-    }*/
   }
   &__item-order {
     &:first-child {
@@ -87,16 +79,8 @@
     margin-left: auto;
     border-radius: 50%;
     border: 2px solid #ffffff;
-    /*&:before {
-      display: block;
-      position: absolute;
-      content: url("./../img/use_shadow.png");
-      margin-top: 225px;
-      margin-left: 13px;
-    }*/
     &.-tablet {
       background: no-repeat url("./../img/Use__img-1.jpg");
-      //margin-left: 19px;
       &:after {
         display: block;
         width: 173px;
@@ -111,11 +95,9 @@
 
     &.-wood {
       background: no-repeat url("./../img/use__img-2.jpg");
-      //margin-left: 55px;
     }
     &.-wait {
       background: no-repeat url("./../img/use__img-3.png");
-      //margin: 0 27px 0 80px;
     }
     &.-form {
       background: no-repeat url("./../img/order__img-1.jpg");
@@ -124,8 +106,8 @@
       background: no-repeat url("./../img/order__img-2.jpg");
     }
     &.-product {
-      background: no-repeat 50% 50% url("./../img/product.png") #ffffff;
-      background-size: 200px 170px;
+      background: no-repeat 50% 65% url(./../img/product.png) #ffffff;
+      background-size: 240px 210px;
     }
   }
   &__ellipse-shadow {
@@ -172,15 +154,6 @@
     border: 2px solid #c4a276;
     margin-left: auto;
     margin-right: auto;
-    /*&:before {
-      display: block;
-      position: absolute;
-      z-index: -1;
-      content: url("./../img/use_shadow.png");
-      margin-top: 245px;
-      margin-left: 20px;
-      opacity: 0.3;
-    }*/
   }
   .tablet-position {
     position: absolute;
@@ -259,6 +232,9 @@
   }
 
   @media all and (max-width: 1190px) {
+    //&__section-container {
+    //  padding-top: 40px;
+    //}
     &__container-title {
       padding: 40px 0 55px 0;
       font-size: 40px;
@@ -285,7 +261,7 @@
         background-size: contain;
       }
       &.-product {
-        background-size: 150px 120px;
+        background-size: 180px 150px;
       }
       &.-tablet:after {
         margin-top: 120px;
@@ -314,6 +290,10 @@
     }
   }
   @media all and (max-width: 1023px) {
+    &__container-title {
+      padding: 40px 0 30px 0;
+      font-size: 40px;
+    }
     &__horizontal-line {
       display: none;
     }
