@@ -8,11 +8,12 @@
 	font-weight: 900;
 }
 .reviews {
-	padding: 85px 0 60px;
 	color: #303b3b;
 	background-color: #ffffff;
 }
 .reviews .wrapper {
+	padding-top: 85px;
+	padding-bottom: 60px;
 	background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194px);
 }
 .reviews-slider {

@@ -20,7 +20,7 @@ $(document).ready(function() {
    });
    var cont = $('.slider__content-right');
    $('.slider__plus').click(function(){
-    cont.toggleClass('active');
+    $(this).parent().toggleClass('active');
     });
    $('.slider__right').on('click', function(){
        $('.slider').slick('slickNext');

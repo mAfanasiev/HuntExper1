@@ -20,6 +20,13 @@
   .section {
     padding: $padding-lg;
   }
+  .section.reviews {
+    padding: 0;
+  }
+  .reviews .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .wrapper {
     max-width: 768px;
   }
@@ -34,6 +41,13 @@
 @media only screen and (max-width: 767px) {
   .section {
     padding: $padding-md;
+  }
+  .section.reviews {
+    padding: 0;
+  }
+  .reviews .wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .wrapper {
     max-width: 640px;
@@ -52,6 +66,13 @@
 @media only screen and (max-width: 479px) {
   .section {
     padding: $padding-sm;
+  }
+  .section.reviews {
+    padding: 0;
+  }
+  .reviews .wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .title {
     font-size: $title-sm;
