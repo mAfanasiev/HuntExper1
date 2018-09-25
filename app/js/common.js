@@ -25,22 +25,18 @@ $(document).ready(function() {
    $('.slider__right').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active'); 
-       $('.slider__plus::after').removeClass('active');
    });
    $('.slick__next').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active');
-       $('.slider__plus::after').removeClass('active');
    });
    $('.slider__left').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
-       $('.slider__plus::after').removeClass('active');
    });
    $('.slick__prev').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
-       $('.slider__plus::after').removeClass('active');
    });
    
 
