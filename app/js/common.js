@@ -4,14 +4,14 @@ $(document).ready(function() {
     $('.list__plus').click(function(){
         var listDescription = $(this).parent('.list__item');
         listDescription.toggleClass('itemActive').siblings().removeClass('itemActive');
-    })
+    });
    
 
     // слайдер плюс     
     var cont = $('.slider__content-right');           
    $('.slider__plus').click(function(){
     cont.toggleClass('active');
-    })
+    });
     
     // слайдер
    $('.slider').slick({
@@ -25,15 +25,15 @@ $(document).ready(function() {
    $('.slick__next').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active');
-   })
+   });
    $('.slider__left').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
-   })
+   });
    $('.slick__prev').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
-   })
+   });
 
    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         var sliderRightOne = $('.slider__right_one'),
@@ -91,18 +91,23 @@ $('.reviews-slider').slick({
       }
     }
     ]
-})
-
+});
 $(".plus").click(function(e){
 	var block = $(this).parents(".slick-slide");
 	block.toggleClass("reviews-active").siblings().removeClass("reviews-active");
-})
+});
 
 $(".reviews-slick__prev").on("click", function(){
   $('.reviews-slider').slick("slickPrev");
   $(".reviews-active").removeClass("reviews-active");
-})
+});
 $(".reviews-slick__next").on("click", function(){
   $('.reviews-slider').slick("slickNext");
   $(".reviews-active").removeClass("reviews-active")
-})
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top }, 1000);
+});
