@@ -219,10 +219,22 @@
     .slider__content{
         flex-direction: column;
     }
+    .slick__next{
+        margin-left: -10px;
+    }
+    .slick__prev{
+        margin-right: -10px;
+    }
 }
 @media only screen and (max-width: 639px){
     .slider{
         width: 320px;
+    }
+    .slick__next{
+        margin-left: -10px;
+    }
+    .slick__prev{
+        margin-right: -10px;
     }
 }
 @media only screen and (max-width: 479px) {
@@ -234,5 +246,11 @@
                 margin-left: 0;
             }
         }
+    }
+    .slick__next{
+        margin-left: -10px;
+    }
+    .slick__prev{
+        margin-right: -10px;
     }
 }
