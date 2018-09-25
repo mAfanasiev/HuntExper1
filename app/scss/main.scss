@@ -361,6 +361,12 @@
     margin: auto;
   }
 }
+input::-ms-clear {
+  display: none;
+}
+.ib {
+  display: inline-block;
+}
 /*end form *************/
 @import "media";
 /**********header************/
