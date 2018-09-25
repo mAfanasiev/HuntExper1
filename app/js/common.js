@@ -7,37 +7,42 @@ $(document).ready(function() {
     });
    
 
-    // слайдер плюс     
-              
-   
-    
-    // слайдер
+       
+     // слайдер
    $('.slider').slick({
         arrows: false,
         adaptiveHeight: true,
         slidesToShow: 1,
 	    slidesToScroll: 1
    });
+
+
    var cont = $('.slider__content-right');
    $('.slider__plus').click(function(){
     $(this).parent().toggleClass('active');
     });
+    
    $('.slider__right').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active'); 
+       $('.slider__plus::after').removeClass('active');
    });
    $('.slick__next').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active');
+       $('.slider__plus::after').removeClass('active');
    });
    $('.slider__left').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
+       $('.slider__plus::after').removeClass('active');
    });
    $('.slick__prev').on('click', function(){
        $('.slider').slick('slickPrev');
        cont.removeClass('active');
+       $('.slider__plus::after').removeClass('active');
    });
+   
 
    $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         var sliderRightOne = $('.slider__right_one'),
@@ -96,7 +101,7 @@ $('.reviews-slider').slick({
     }
     ]
 });
-$(".plus").click(function(e){
+$(".reviews-button").click(function(e){
 	var block = $(this).parents(".slick-slide");
 	block.toggleClass("reviews-active").siblings().removeClass("reviews-active");
 });
