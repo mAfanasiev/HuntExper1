@@ -97,7 +97,7 @@ $('.reviews-slider').slick({
     }
     ]
 });
-$(".plus").click(function(e){
+$(".reviews-button").click(function(e){
 	var block = $(this).parents(".slick-slide");
 	block.toggleClass("reviews-active").siblings().removeClass("reviews-active");
 });
