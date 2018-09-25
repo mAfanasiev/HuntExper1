@@ -80,6 +80,7 @@
         padding: 47px 30px;
         background-color: #fbfaf6;
         border-radius: 20px;
+        height: auto;
         &-left{
             width: 170px;
         }
@@ -113,7 +114,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 17px;
             color: #919197;
-            height: 147px;
+            max-height: 147px;
             margin-bottom: 5px;
             overflow: hidden;
             position: relative;
@@ -134,9 +135,12 @@
         margin: 15px 0;
     }
 }
+.slick-list.draggable {
+    height: auto !important;
+}
 .slider__content-right.active{
     .slider__content-description{
-        height: auto;
+        max-height: 100% !important; 
         &::before{
             height: 0;
         }

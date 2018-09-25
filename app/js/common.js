@@ -8,16 +8,20 @@ $(document).ready(function() {
    
 
     // слайдер плюс     
-    var cont = $('.slider__content-right');           
-   $('.slider__plus').click(function(){
-    cont.toggleClass('active');
-    });
+              
+   
     
     // слайдер
    $('.slider').slick({
-        arrows: false
+        arrows: false,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+	    slidesToScroll: 1
    });
-
+   var cont = $('.slider__content-right');
+   $('.slider__plus').click(function(){
+    cont.toggleClass('active');
+    });
    $('.slider__right').on('click', function(){
        $('.slider').slick('slickNext');
        cont.removeClass('active'); 
