@@ -111,7 +111,7 @@
             height: 80px;
             bottom: -10px;
             -webkit-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.93);
-            -moz-box-shadow: -3px 0px 8px 0px rgba(0,0,0,0.93);
+            -moz-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.93);
             box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.93);
 
         }
@@ -187,13 +187,21 @@
         flex-direction: column;
     }
     .profit-list__shadow{
-        bottom: 45px;
+        bottom: 15px;
         left: -16px;
     }
     .profit__product-img {
         max-width: 100%;
         margin-left: 0px;
         margin-top: 0px;
+    }
+    .profit-list__img{
+        height: 125px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .profit-list__right{
+        max-width: 380px;
     }
 }
 @media only screen and (max-width: 639px){
@@ -212,7 +220,7 @@
         bottom: -17px;
     }
     .profit-list__shadow{
-        bottom: 47px;
+        bottom: 15px;
         left: -20px;
     }
     .profit__composition-text{
