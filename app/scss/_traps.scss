@@ -1,0 +1,448 @@
+@import './media';
+.traps{  
+    background-color: #ffffff;
+    position: relative;
+    z-index: 0;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1200px;
+        height: 100%;
+        background-image: url('../img/line__bg.png');
+        background-repeat: repeat-y;
+        background-position: center top;
+        background-size: 1200px;
+        top: 0;
+        left: calc(50% - 600px);
+        z-index: -1;
+    }
+    &__title{
+        width: 800px;
+        &-two{
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 117px 0 80px;
+    }
+}
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 155px;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    &__img-one{
+        position: absolute;
+        z-index: 1;
+        bottom: 92px;
+        left: calc(50% - 81px);
+        &_position-one{
+            left: calc(50% - 82px);
+        }
+        &_position-two{
+            left: calc(50% - 110px);
+        }
+    }
+    &__caption{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        color: #303b3b;
+        width: 100%;
+    }
+    &__castom-line{
+        margin: 22px 0;
+    }
+    &__description{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #898b82;
+        height: 65px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        &::before{
+            content: '';
+            height: 25px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.35) 20%, rgba(255,255,255,0.45) 37%, rgba(255,255,255,0.6) 58%, rgba(255,255,255,0.8) 77%, rgba(255,255,255,1) 100%);
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.35) 20%,rgba(255,255,255,0.45) 37%,rgba(255,255,255,0.6) 58%,rgba(255,255,255,0.8) 77%,rgba(255,255,255,1) 100%);
+			background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 20%,rgba(255,255,255,0.9) 37%,rgba(255,255,255,0.9) 58%,rgba(255,255,255,0.9) 77%,rgba(255,255,255,1) 100%);
+        }    
+    }
+    &__plus{
+        margin-top: 10px
+    }
+}
+
+.list__item.itemActive{
+    .list__description{
+        height: auto;
+        &::before{
+            height: 0;
+        }
+    }
+    .plus::after{
+        width: 0;
+        height: 0;
+    }
+}
+
+.production{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    &__left{
+        display: flex;
+    }
+    &__right{
+        display: flex;
+    }
+    &__two{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    &__three{
+        width: 268px;
+        height: 297px;
+        margin: 0 10px 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__number{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &-one{
+            z-index: 1;
+            font-size: 300px;
+            text-shadow: 0px 0px 28px rgba(150, 150, 150, 1);
+            left: 50px;
+            top: 0;
+        }
+        &-two{
+            z-index: 2;
+            font-size: 300px;
+            left: 50px;
+            top: 0;
+        }
+        &-three{
+            z-index: 3;
+            font-size: 300px;
+            left: 50px;
+            top: 0;
+        }
+        &-text{
+            font-size: 22px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            color: #303b3b;
+            z-index: 5;
+            width: 90px;
+            position: absolute;
+            right: -10px;
+            bottom: 76px;
+        }
+    }
+    &__v{
+        position: absolute;
+        font-size: 100px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        left: 9px;
+        top: 51px;
+        color: #303b3b;
+    }
+    &__x-one{
+        z-index: 4;
+        font-size: 80px;
+        position: absolute;
+        left: 30px;
+        bottom: 79px;
+        text-shadow: 0px 0px 28px rgba(150, 150, 150, 1);
+    }
+    &__x-two{
+        z-index: 5;
+        font-size: 80px;
+        position: absolute;
+        left: 30px;
+        bottom: 79px;
+    }
+    &__x-three{
+        z-index: 6;
+        font-size: 80px;
+        position: absolute;
+        left: 30px;
+        bottom: 79px;
+    }
+    &__four{
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .traps::after {
+        width: 100%;
+        left: 0;
+        background-size: 1019px;
+    }
+}
+@media only screen and (max-width: 1190px) {
+    .list__item{
+        width: 323px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .traps__wrapper{
+        padding: 0;
+    }
+    .traps::after {
+        background-size: 1124px;
+    }
+    .list{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .traps__title{
+        width: auto;
+    }
+    .traps__title-two{
+        width: 700px;
+    }
+    .production{
+        align-items: center;
+        &__left{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__right{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__two{
+            margin-top: 0;
+            margin-left: 0;
+        }
+        &__four{
+            margin-top: 0;
+            margin-right: 0;
+        }
+        &__fife{
+            margin-top: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .traps__title{
+        width: auto;
+    }
+    .traps__title-two{
+        width: auto;
+    }
+    .production{
+        margin-top: 20px;
+        flex-direction: column;
+        &__left{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+        }
+        &__right{
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            align-items: flex-end;
+        }
+        &__three{
+            margin: -40px 10px -40px 40px;
+        }
+        &__four{
+            margin-left: 45px;
+        }
+        &__fife{
+            margin-top: 0;
+            margin-left: 75px;
+        }
+    }
+}
+@media only screen and (max-width: 639px){
+
+    .production__left{
+        justify-content: space-between;
+    }
+    .production__right{
+        justify-content: space-between;
+    }
+    .production__one{
+        width: 170px;
+    }
+    .production__two{
+        width: 90px;
+        margin-right: 15px;
+    }
+    .production__three{
+        width: 200px;
+        margin: -70px 10px -70px 40px;
+    }
+    .production__four{
+        width: 150px;
+        margin-left: 15px;
+    }
+    .production__fife{
+        width: 150px;
+    }
+    .production{
+        &__number{
+            width: 100%;
+            height: 100%;
+            &-one{
+                z-index: 1;
+                font-size: 240px;
+                top: 26px;
+                left: 30px;
+            }
+            &-two{
+                z-index: 2;
+                font-size: 240px;
+                top: 26px;
+                left: 30px;
+            }
+            &-three{
+                z-index: 3;
+                font-size: 240px;
+                top: 26px;
+                left: 30px;
+            }
+            &-text{
+                font-size: 20px;
+                right: -38px;
+                bottom: 81px;    
+            }
+        }
+        &__v{
+            font-size: 70px;
+            left: 5px;
+            top: 74px;
+        }
+        &__x-one{
+            font-size: 60px;
+            left: 18px;
+            bottom: 98px;
+        }
+        &__x-two{
+            font-size: 60px;
+            left: 18px;
+            bottom: 98px;
+        }
+        &__x-three{
+            font-size: 60px;
+            left: 18px;
+            bottom: 98px;
+        }
+    }
+}
+@media only screen and (max-width: 479px) {
+    .traps__wrapper{
+        background: #ffffff;
+    }
+    .list__item{
+        width: 300px;
+    }
+    .production{
+        margin-top: 10px;
+        
+        &__one{
+            width: 150px;
+        }
+        &__two{
+            width: 70px;
+            margin-right: 15px;
+        }
+        &__three{
+            width: 170px;
+        }
+        &__four{
+            width: 110px;
+            margin-left: 15px;
+        }
+        &__fife{
+            width: 110px;
+        }
+        &__number{
+            width: 100%;
+            height: 100%;
+            &-one{
+                z-index: 1;
+                font-size: 200px;
+                top: 48px;
+                left: 27px;
+            }
+            &-two{
+                z-index: 2;
+                font-size: 200px;
+                top: 48px;
+                left: 27px;
+            }
+            &-three{
+                z-index: 3;
+                font-size: 200px;
+                top: 48px;
+                left: 27px;
+            }
+            &-text{
+                font-size: 18px;
+                right: -40px;
+                bottom: 87px;
+            }
+        }
+        &__v{
+            font-size: 50px;
+            left: 9px;
+            top: 91px;
+        }
+        &__x-one{
+            font-size: 50px;
+            left: 18px;
+            bottom: 106px;
+        }
+        &__x-two{
+            font-size: 50px;
+            left: 18px;
+            bottom: 106px;
+        }
+        &__x-three{
+            font-size: 50px;
+            left: 18px;
+            bottom: 106px;
+        }
+    }
+    
+}

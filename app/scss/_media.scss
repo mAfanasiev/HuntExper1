@@ -1,0 +1,80 @@
+@import "_standart_styles/_vars";
+
+/*==========  Desktop First  ========== */
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+
+}  
+@media only screen and (max-width: 1190px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1024px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .section {
+    padding: $padding-lg;
+  }
+  .section.reviews {
+    padding: 0;
+  }
+  .reviews .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .wrapper {
+    max-width: 768px;
+  }
+  .title {
+    font-size: $title-lg;
+    line-height: 1;
+  }
+
+}
+
+//@media only screen and (max-width: 992px)
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: $padding-md;
+  }
+  .section.reviews {
+    padding: 0;
+  }
+  .reviews .wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .wrapper {
+    max-width: 640px;
+  }
+  .title {
+    font-size: $title-md;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .wrapper {
+    max-width: 480px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .section {
+    padding: $padding-sm;
+  }
+  .section.reviews {
+    padding: 0;
+  }
+  .reviews .wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .title {
+    font-size: $title-sm;
+  }
+}
