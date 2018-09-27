@@ -1,6 +1,21 @@
 @import './media';
 .traps{  
     background-color: #ffffff;
+    position: relative;
+    z-index: 0;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1200px;
+        height: 100%;
+        background-image: url('../img/line__bg.png');
+        background-repeat: repeat-y;
+        background-position: center top;
+        background-size: 1200px;
+        top: 0;
+        left: calc(50% - 600px);
+        z-index: -1;
+    }
     &__title{
         width: 800px;
         &-two{
@@ -12,16 +27,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 194.9px);
         padding: 117px 0 80px;
     }
 }
 .list{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     &__item{
-        width: 344px;
+        width: 370px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -192,7 +206,13 @@
         margin-right: 50px;
     }
 }
-
+@media only screen and (max-width: 1200px) {
+    .traps::after {
+        width: 100%;
+        left: 0;
+        background-size: 1019px;
+    }
+}
 @media only screen and (max-width: 1190px) {
     .list__item{
         width: 323px;
@@ -201,6 +221,9 @@
 @media only screen and (max-width: 1023px) {
     .traps__wrapper{
         padding: 0;
+    }
+    .traps::after {
+        background-size: 1124px;
     }
     .list{
         flex-wrap: wrap;

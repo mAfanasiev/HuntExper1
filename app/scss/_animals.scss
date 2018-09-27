@@ -14,7 +14,9 @@
 .animals-wrap__item {
 	padding: 15px 15px 50px;
 	box-shadow: 0 5px 16px rgba(190, 190, 190, 0.61);
-	background-color: #fff
+	background-color: #fff;
+	z-index: 1;
+	transition: .5s;
 }
 .animals-wrap__item img {
 	border: 2px solid #e7e7e7;
@@ -42,7 +44,10 @@
     margin-left: 0;
     transform: rotate(-4deg);
 }
-
+.animals-wrap__item:hover {
+	transform: scale(1.05) rotate(0);
+	z-index: 2;
+}
 @media only screen and (max-width: 1190px) {
 	.animals-wrap__item {
 		width: 300px;
