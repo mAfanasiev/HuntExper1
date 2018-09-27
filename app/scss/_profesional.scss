@@ -80,6 +80,7 @@
         padding: 47px 30px;
         background-color: #fbfaf6;
         border-radius: 20px;
+        height: auto;
         &-left{
             width: 170px;
         }
@@ -113,7 +114,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 17px;
             color: #919197;
-            height: 147px;
+            max-height: 147px;
             margin-bottom: 5px;
             overflow: hidden;
             position: relative;
@@ -134,16 +135,18 @@
         margin: 15px 0;
     }
 }
+.slick-list.draggable {
+    height: auto !important;
+}
 .slider__content-right.active{
     .slider__content-description{
-        height: auto;
+        max-height: 100% !important; 
         &::before{
             height: 0;
         }
     }
     .plus::after{
-        width: 0;
-        height: 0;
+        display: none;
     }
 }
 
@@ -163,7 +166,7 @@
 .svg-arrow-v3{
     fill:#303b3b;
     &:hover{
-        fill: #b55744;
+        fill: #ffa500;
     }
 }
 .slick__prev{
@@ -189,12 +192,18 @@
 }
 
 @media only screen and (max-width: 1190px) {
+    .profesional{
+        padding: $padding-lg;
+    }
     .slider{
         width: 620px;
     }
 }
 
 @media only screen and (max-width: 1023px) {
+    .profesional{
+        padding: $padding-md;
+    }
     .slider__left,
     .slider__right{
         display: none;
@@ -204,6 +213,12 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .profesional{
+        padding:    $padding-sm;
+    }
+    .content{
+        margin-top: 25px;
+    }
     .slider{
         width: 480px;
         &__content{

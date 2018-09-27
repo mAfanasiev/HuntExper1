@@ -2,29 +2,47 @@
 .use {
   display: block;
   max-width: 100%;
+
   &__section-container {
     display: block;
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
+    padding: 60px 0;
     &:last-child {
       background: #F6F3EE;
       position: relative;
       z-index: 0;
     }
   }
+  &__section-container-bg {
+    position: relative;
+    z-index: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1200px;
+      height: 100%;
+      background-image: url('../img/line__bg.png');
+      background-repeat: repeat-y;
+      background-position: center top;
+      background-size: 1200px;
+      top: 0;
+      left: calc(50% - 600px);
+      z-index: -1;
+    }
+  }
   &__wrapper {
     &.-how-to-use {
-      background: repeating-linear-gradient(90deg, #F6F3EE, #F6F3EE 1px, #ffffff 0, #ffffff 188px);
       position: relative;
       z-index: 0;
-      padding-bottom: 83px;
+      padding-bottom: 23px;
     }
   }
   &__container-title {
     display: block;
     text-align: center;
-    padding: 77px 50px 55px 0;
+    padding: 17px 50px 55px 0;
     color: #303b3b;
     font-size: 44px;
     font-weight: 900;
@@ -43,23 +61,32 @@
     height: 1px;
     background-color: #dadada;
     margin-top: 138px;
-    margin-left: 300px;
+    margin-left: 250px;
   }
   &__items-container {
     display: flex;
     justify-content: space-between;
   }
   &__item {
-    margin-right: auto;
-    margin-left: auto;
+    width: 370px;
+    &:hover .castom__line {
+          background-color: #8B4513;
+          /*box-shadow: 0px 0px 10px rgba(171, 113, 86, 0.8);*/
+          transition: 0.6s;
+        }
   }
   &__item-order {
     &:first-child {
       width: 280px;
+      p:last-child {
+        padding: 10px 20px 40px;
+      }
     }
     &:nth-child(2) {
       width: 318px;
-      margin-right: 50px;
+      p:last-child {
+        padding: 10px 20px 40px;
+      }
     }
     &:last-child {
       width: 320px;
@@ -122,15 +149,15 @@
     box-shadow: 0px 26px 27px 0px rgba(0, 0, 0, 0.75);
     &.-margin-tablet {
       margin-top: -40px;
-      margin-left: 60px;
+      margin-left: 100px;
     }
     &.-margin-wood {
       margin-top: -40px;
-      margin-left: 50px;
+      margin-left: 100px;
     }
     &.-margin-wait {
       margin-top: -40px;
-      margin-left: 90px;
+      margin-left: 100px;
     }
     &.-margin-form {
       margin-top: -40px;
@@ -158,7 +185,7 @@
   .tablet-position {
     position: absolute;
     margin-top: -279px;
-    margin-left: -37px;
+    margin-left: 0px;
     span {
       font-size: 200px;
     }
@@ -166,7 +193,7 @@
   .wood-position {
     position: absolute;
     margin-top: -279px;
-    margin-left: -56px;
+    margin-left: 0px;
     span {
       font-size: 200px;
     }
@@ -174,7 +201,7 @@
   .wait-position {
     position: absolute;
     margin-top: -279px;
-    margin-left: -13px;
+    margin-left: 0px;
     span {
       font-size: 200px;
     }
@@ -196,7 +223,7 @@
       width: 242px;
     }
     &.-away {
-      width: 340px;
+      width: 250px;
     }
 
   }
@@ -223,25 +250,43 @@
     font-weight: 400;
     font-style: italic;
     line-height: 24px;
-    padding-bottom: 80px;
+    padding:13px 0 20px;
     span {
       color: #e89509;
       font-weight: 700;
       font-style: normal;
     }
   }
-
+  @media all and (max-width: 1200px) {
+    .use__section-container-bg::after {
+      width: 100%;
+      left: 0;
+      background-size: 1004px;
+    }
+  }
   @media all and (max-width: 1190px) {
-    //&__section-container {
-    //  padding-top: 40px;
-    //}
+    &__section-container {
+      padding: 40px 0;
+    }
     &__container-title {
-      padding: 40px 0 55px 0;
+      padding-right: 0;
       font-size: 40px;
     }
-    &__wrapper.-how-to-use {
-      padding-bottom: 40px;
+    .use__ellipse-shadow.-margin-form {
+      margin-left: 85px;
     }
+    .use__ellipse-shadow.-margin-wood {
+      margin-left: 85px;
+    }
+    .use__ellipse-shadow.-margin-wait {
+      margin-left: 90px;
+    }
+    .use__item-order:first-child {
+      width: 320px;
+    }
+    /*&__wrapper.-how-to-use {
+      padding-bottom: 40px;
+    }*/
     &__horizontal-line {
       margin-top: 100px;
       margin-left: 150px;
@@ -269,29 +314,29 @@
       }
     }
     &__item-order:nth-child(2) {
-      margin-right: auto;
+      width: 320px;
     }
     .tablet-position {
       margin-top: -250px;
-      margin-left: -10px;
+      margin-left: 20px;
     }
     .wood-position {
       margin-top: -250px;
-      margin-left: -35px;
+      margin-left: 25px;
     }
     .wait-position {
       margin-top: -250px;
-      margin-left: 20px;
+      margin-left: 25px;
     }
     &__order-consult {
       width: auto;
       max-width: 823px;
-      padding-bottom: 40px;
+      //padding-bottom: 40px;
     }
   }
   @media all and (max-width: 1023px) {
     &__container-title {
-      padding: 40px 0 30px 0;
+      //padding: 40px 0 30px 0;
       font-size: 40px;
     }
     &__horizontal-line {
@@ -299,6 +344,15 @@
     }
     &__items-container {
       flex-wrap: wrap;
+      justify-content: center;
+    }
+    .use__section-container-bg::after {
+      background-size: 1122px;
+    }
+    .use__ellipse-shadow.-margin-tablet,
+    .use__ellipse-shadow.-margin-wood,
+    .use__ellipse-shadow.-margin-wait {
+      margin-left: 105px;
     }
     &__item {
       margin-top: 60px;
@@ -307,18 +361,34 @@
       margin-top: 20px;
     }
   }
-  @media all and (max-width: 479px) {
-    &.use__wrapper.-how-to-use {
-      padding-bottom: 20px;
+  @media all and (max-width: 767px) {
+    &__section-container {
+      padding: 30px 0;
     }
-    &__container-title {
+  }
+  @media all and (max-width: 479px) {
+    /*&.use__wrapper.-how-to-use {
+      padding-bottom: 20px;
+    }*/
+    .use__section-container-bg::after {
+      background-image: none;
+    }
+    /*&__container-title {
       padding: 20px 0;
+    }*/
+    .use__item {
+      width: 300px;
     }
     &__ellipse-shadow {
       &.-margin-wait {
         margin-top: -40px;
         margin-left: 60px;
       }
+    }
+    .use__ellipse-shadow.-margin-wait,
+    .use__ellipse-shadow.-margin-wood,
+    .use__ellipse-shadow.-margin-tablet {
+      margin-left: 70px;
     }
     &__additional-info {
       &.-blame, &.-smell, &.-away {
@@ -329,9 +399,9 @@
     .wood-position, .wait-position {
       margin-left: -5px;
     }
-    &__order-consult {
+    /*&__order-consult {
       padding: 0 10px 20px;
-    }
+    }*/
   }
 }
 

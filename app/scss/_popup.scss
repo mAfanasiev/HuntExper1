@@ -3,7 +3,7 @@
 
 
 .ever-popup {
-  background-color: rgba(154, 142, 126, 0.9) !important;
+  background: url('../img/popup__bg.png') repeat !important;
 }
 
 .popup {
@@ -11,7 +11,8 @@
     width: 750px;
     height: 515px;
     border-radius: 6px;
-    background-color: rgba(224, 222, 222, 1);
+    background-image: url('../img/polosa.jpg');
+    background-repeat: repeat;
     border: 1px solid #9a8e7e;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     position: relative;

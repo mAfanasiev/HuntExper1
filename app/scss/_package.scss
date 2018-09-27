@@ -83,6 +83,12 @@
 	}
 }
 @media only screen and (max-width: 1023px) {
+	.package .title {
+		margin-bottom: 35px;
+	}
+	.package-wrap {
+		margin-bottom: 35px;
+	}
 	.package-wrap__item {
 		width: 180px;
 		height: 180px;
@@ -134,7 +140,8 @@
 		flex-direction: column;
 	}
 	.package-wrap .symbols {
-		margin: 20px 0; 
+		margin: 5px 0; 
+		width: 40px;
 	}
 	.package-wrap__item {
 		margin-bottom: 0;
@@ -148,7 +155,7 @@
 		max-width: 240px;
 	}
 	.package-wrap .symbols span {
-		font-size: 100px;
+		font-size: 80px;
 	}
 		.package-wrap__result {
 		width: auto;
