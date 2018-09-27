@@ -5,6 +5,7 @@
     background-color: #ffffff;
     position: relative;
     z-index: 0;
+
     &::after {
         content: '';
         position: absolute;
@@ -42,6 +43,7 @@
         &__item{
             display: flex;
             justify-content: space-between;
+            min-height: 200px;
         }
         &__left{
             width: 230px;
@@ -49,7 +51,6 @@
         &__number{
             position: relative;
             width: 115px;
-            height: 200px;
             z-index: 4;
             &-one{
                 z-index: 1;
@@ -71,21 +72,28 @@
             right: -100px;
             width: 157px;
             height: 157px;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
+        }
+        &__img img {
             border: 2px solid #ffffff;
             border-radius: 50%;
+            position: absolute;
         }
         &__shadow{
             display: block;
-            width: 160px;
-            height: 12px;
+            width: 110px;
+            height: 15px;
             position: absolute;
             border-radius: 80%;
             z-index: -2;
             content: "";
-            -webkit-box-shadow: 0px 17px 27px 2px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 26px 27px 0px rgba(0, 0, 0, 0.75);
-            bottom: 20px;
-            left: 0;
+            -webkit-box-shadow: 0px 17px 27px 2px rgba(0, 0, 0, 01);
+            box-shadow: 0px 26px 27px 0px rgba(0, 0, 0, 1);
+            bottom: -139px;
+            right: -78px;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
         }
         &__right{
             max-width: 500px;
@@ -98,6 +106,8 @@
         }
         &__line{
             margin: 20px 0;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
         }
         &__description{
             font-family: 'Roboto', sans-serif;
@@ -108,8 +118,8 @@
     &__product{
         max-width: 440px;
         &-img{
-            max-width: 150%;
-            margin-left: -104px;
+            max-width: 117%;
+            margin-left: -21px;
             margin-top: 70px;
         }
     }
@@ -170,19 +180,48 @@
         }
     }
 }
+.profit-list__item:hover{
+    
+    .profit-list__img{
+        top: -15px;
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+    }
+    .profit-list__shadow{
+        width: 90px;
+        right: -72px;
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+        height: 14px;
+    }
+    .profit-list__line{
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+        background-color: #8f2915;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .profit::after {
         width: 100%;
         left: 0;
         background-size: 1024px;
     }
+    
 }
 
 @media only screen and (max-width: 1190px){
+    .profit-list__item{
+        min-height: 160px;
+    }
+    .profit-list__left{
+        width: 220px
+    }
     .profit-list__img {
         top: 13px;
         right: -69px;
         width: 125px;
+        height: 125px;
     }    
     .profit-list__caption{
         font-size: 18px;
@@ -191,13 +230,35 @@
         font-size: 16px;
     }
     .profit-list__shadow{
-        bottom: 45px;
-        left: -16px;
+        width: 90px;
+        right: -54px;
+        bottom: -119px;
     }
     .profit__product-img {
-        max-width: 120%;
-        margin-left: -67px;
+        max-width: 122%;
+        margin-left: -37px;
         margin-top: 70px;
+        height: auto;
+    }
+
+    .profit-list__line{
+        margin: 10px 0;
+    }
+
+    .profit-list__item:hover{
+    
+        .profit-list__img{
+            top: 3px;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
+        }
+        .profit-list__shadow{
+            width: 70px;
+            right: -45px;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
+            height: 14px;
+        }
     }
 }
 
@@ -208,17 +269,17 @@
     .profit__content {
         flex-direction: column;
     }
-    .profit-list__shadow{
-        bottom: 15px;
-        left: -16px;
-    }
     .profit__product-img {
         max-width: 100%;
         margin-left: 0px;
         margin-top: 0px;
+        height: auto;
     }
     .profit-list__img{
         height: 125px;
+    }
+    .profit__bottom{
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 767px){
@@ -242,8 +303,8 @@
         bottom: -17px;
     }
     .profit-list__shadow{
-        bottom: 15px;
-        left: -20px;
+       bottom: 39px;
+       right: -52px;
     }
     .profit__composition-text{
         padding-right: 0;
