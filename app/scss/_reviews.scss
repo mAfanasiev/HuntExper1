@@ -33,7 +33,7 @@
 	padding-top: 85px;
 	padding-bottom: 60px;
 	position: relative;
-z-index: auto;
+	z-index: auto;
 }
 .reviews-slider {
 	display: flex;
@@ -206,6 +206,8 @@ z-index: auto;
 }
 @media only screen and (max-width: 1190px) {
 	.reviews .wrapper {
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	.reviews-slider__title {
 		font-size: 17px;
