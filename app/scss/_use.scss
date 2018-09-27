@@ -69,6 +69,7 @@
   }
   &__item {
     width: 370px;
+
     &:hover .castom__line {
           background-color: #8B4513;
           /*box-shadow: 0px 0px 10px rgba(171, 113, 86, 0.8);*/
@@ -84,6 +85,7 @@
     }
     &:nth-child(2) {
       width: 318px;
+
       p:last-child {
         padding: 10px 20px 40px;
       }
@@ -272,11 +274,24 @@
       padding-right: 0;
       font-size: 40px;
     }
+
     .use__ellipse-shadow.-margin-form {
       margin-left: 85px;
     }
     .use__ellipse-shadow.-margin-wood {
       margin-left: 85px;
+
+    .use__ellipse-shadow.-margin-wood {
+      margin-left: 85px;
+    }
+    .use__ellipse-shadow.-margin-wait {
+      margin-left: 90px;
+    }
+    .use__item-order:first-child {
+      width: 320px;
+    }
+    &__wrapper.-how-to-use {
+      padding-bottom: 40px;
     }
     .use__ellipse-shadow.-margin-wait {
       margin-left: 90px;
@@ -318,15 +333,16 @@
     }
     .tablet-position {
       margin-top: -250px;
-      margin-left: 20px;
+
+      margin-left:0px;
     }
     .wood-position {
       margin-top: -250px;
-      margin-left: 25px;
+      margin-left: 15px;
     }
     .wait-position {
       margin-top: -250px;
-      margin-left: 25px;
+      margin-left: 15px;
     }
     &__order-consult {
       width: auto;
@@ -349,10 +365,15 @@
     .use__section-container-bg::after {
       background-size: 1122px;
     }
+
     .use__ellipse-shadow.-margin-tablet,
     .use__ellipse-shadow.-margin-wood,
     .use__ellipse-shadow.-margin-wait {
       margin-left: 105px;
+
+    .use__ellipse-shadow.-margin-wood,
+    .use__ellipse-shadow.-margin-wait {
+      margin-left: 100px;
     }
     &__item {
       margin-top: 60px;
@@ -373,9 +394,19 @@
     .use__section-container-bg::after {
       background-image: none;
     }
+
     /*&__container-title {
+
+    .use__section-container-bg::after {
+      background-image: none;
+    }
+    &__container-title {
+
       padding: 20px 0;
     }*/
+    .use__item {
+      width: 300px;
+    }
     .use__item {
       width: 300px;
     }
