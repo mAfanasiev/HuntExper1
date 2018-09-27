@@ -30,9 +30,9 @@
 	position: relative;
 }
 .package-product {
-	max-width: 350px;
-    left: -35px;
-    top: 0;
+	max-width: 270px;
+    left: 15px;
+    top: 25px;
 }
 .package-wrap__item img {
 	background-position: center center;
@@ -64,10 +64,16 @@
 	width: 65px;
 }
 @media only screen and (max-width: 1189px) {
+	.package {
+		padding: 60px 0;
+	}
 	.package-img {
 	    max-width: 260px;
 	    left: -10px;
 	    top: 25px;
+	}
+	.package-product {
+	    left: 15px;
 	}
 	.package-wrap__result {
 		width: 320px;
