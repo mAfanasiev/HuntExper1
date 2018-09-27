@@ -3,7 +3,6 @@
 //@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 //@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
 
-
 .header {
   padding-top: 27px;
   background-image: url('../img/header__bg.png');
@@ -61,7 +60,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    
+
   }
   & .content__left {
     width: 500px;
@@ -119,6 +118,7 @@
   & .green__text {
     font-weight: 700;
     font-size: 22px;
+    text-shadow: 0 0 2px #000;
   }
   & .content__center {
     width: 400px;
@@ -147,18 +147,20 @@
   & .center__hunt {
     position: absolute;
     bottom: 0;
-    right: -150px;
+    right: -165px;
+    height: 610px;
+    overflow: hidden;
     & img {
       max-width: 685px;
     }
   }
   & .center__prod {
     position: absolute;
-    bottom: -155px;
-    right: -85px;
+    bottom: -85px;
+    right: -25px;
     z-index: 4;
     & img {
-      max-width: 587px;
+      max-width: 420px;
     }
   }
   & .content__right {
@@ -182,8 +184,14 @@
 
 }
 
-:-ms-fullscreen, :root .top__logo { color: #e89509; }
-:-ms-fullscreen, :root .top__logo { background: transparent; }
+:-ms-fullscreen, :root .top__logo {
+  color: #e89509;
+}
+
+:-ms-fullscreen, :root .top__logo {
+  background: transparent;
+}
+
 @media only screen and (max-width: 1350px) {
   .header .wrapper {
     max-width: 1024px;
@@ -210,19 +218,50 @@
       margin-top: 35px;
     }
     & .center__prod {
-      right: -55px;
+      right: -30px;
     }
     & .center__prod img {
-      width: 400px;
+        width: 330px;
     }
     & .center__hunt {
       right: -160px;
+      height: 470px;
     }
     & .center__hunt img {
-      width: 480px;
+      width: 450px;
     }
     & .content__right {
       margin-right: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .header {
+    & .content__left {
+      width: 500px;
+    }
+    & .left__des {
+      display: inline-block;
+      padding-right: 35px;
+      width: auto;
+    }
+    & .list__items {
+      padding-left: 30px;
+    }
+    & .content__center {
+      width: 210px;
+    }
+    & .center__hunt {
+      height: 450px;
+      right: -100px;
+    }
+    & .content__right {
+      margin-right: 21px;
+      padding-bottom: 30px;
+      &::before {
+        display: none;
+      }
     }
   }
 }
@@ -235,16 +274,20 @@
     &.section {
       padding-bottom: 0;
     }
-    background-image: none;
     background-color: #262e2d;
+    background-position: center bottom;
+    background-size: auto;
     &__content {
       flex-wrap: wrap;
     }
+    &__top {
+      justify-content: center;
+    }
     & .top__logo {
-      font-size: 34px;
+      font-size: 50px;
     }
     & .top__list {
-      width: auto;
+      display: none;
     }
     & .list__itm {
       padding-right: 15px;
@@ -254,17 +297,22 @@
     }
     & .left__title {
       text-align: center;
-      margin-top: 20px;
-      & br {
-        display: none;
-      }
+      margin-top: 5px;
+
     }
     & .left__list {
       display: flex;
       justify-content: space-between;
     }
     & .title__text {
+      font-weight: 900;
       display: inline;
+      &-1 {
+        display: block;
+      }
+    }
+    & .firstL {
+      text-transform: capitalize;
     }
     & .title__text-2 {
       font-size: 28px;
@@ -289,17 +337,14 @@
       }
     }
     & .left__des {
-      width: auto;
-      display: inline-block;
-      margin-top: 20px;
-      padding: 5px 20px;
-      text-align: center;
+      display: none;
     }
     & .green__text {
       font-size: 18px;
     }
     & .center__hunt {
-      right: -330px;
+      right: -385px;
+      height: 550px;
     }
     & .center__hunt img {
       width: 585px;
@@ -308,8 +353,9 @@
       padding-bottom: 30px;
     }
     & .center__prod {
-      bottom: -30px;
-      right: -185px;
+      bottom: -50px;
+      right: -265px;
+
     }
   }
 
@@ -337,6 +383,9 @@
     }
     & .center__prod {
       position: static;
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
     }
     & .content__right {
       margin-right: 15px;
@@ -349,6 +398,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 767px) {
   .header {
     &__top {
@@ -376,6 +426,12 @@
         display: none;
       }
     }
+    & .list__items br {
+      display: block;
+    }
+    & .list__items .hid {
+      display: none;
+    }
     & .title__text {
       font-size: 24px;
     }
@@ -389,7 +445,7 @@
       width: 100%;
     }
     & .center__prod {
-      width: 100%;
+      margin-top: 15px;
     }
     & .form .form__discont {
       right: calc(50% - 41px);

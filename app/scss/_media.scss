@@ -14,11 +14,18 @@
     padding-right: 10px;
     padding-left: 10px;
   }
+
 }
 
 @media only screen and (max-width: 1023px) {
   .section {
     padding: $padding-lg;
+  }
+  .section.traps {
+    padding-top: 80px;
+  }
+  .section.header {
+    padding-top: 10px;
   }
   .section.reviews {
     padding: 0;
